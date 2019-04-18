@@ -39,7 +39,7 @@
       echo 'theme = "hugo-future-imperfect"' >> config.toml
       ```
     * Go on the ***Settings*** of your GitHub online repo and in the ***GitHub Pages*** section choose ```master branch /docs folder``` as ***Source***, don't choose theme and copy the adress of the generated site.
-    * In the ```config.toml```
+    * In the ```config.toml```, for ```baseurl = ""```, paste the adress
     * Go to, for example, to ```hugo/content/blog``` directory and add a MarkDown file in it
     * If you want to check your changes, go to the root of ```hugo```:
 
