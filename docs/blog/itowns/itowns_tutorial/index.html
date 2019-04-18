@@ -1,0 +1,2773 @@
+
+
+
+    
+
+
+
+
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "https://thomleysens.github.io/test_hugo/"
+        },
+        "articleSection" : "blog",
+        "name" : "",
+        "headline" : "",
+        "description" : "iTowns tutorial  Tutorial UNDER CONSTRUCTION with *iTowns v2.9.0*
+  iTowns examples. Source: iTowns website   Table of content  iTowns tutorial  Table of content Preamble  iTowns  Presentation Layers Tutorial goals  Web services  Quickstart  Installation  Node and npm  Linux Windows Mac OS  iTowns  iTowns Controls Hello world  Develop your own application  Separated files for a better management  HTML CSS JS JSON  Add Tiles layers Add vector Color layer from GeoJSON Add 3D layer (WMTS) Cool stuffs (split example)     Through this tutorial you will learn how to get your own running iTowns application.",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "0001",
+        "datePublished": "0001-01-01 00:00:00 &#43;0000 UTC",
+        "dateModified" : "0001-01-01 00:00:00 &#43;0000 UTC",
+        "url" : "https://thomleysens.github.io/test_hugo/blog/itowns/itowns_tutorial/",
+        "wordCount" : "4799",
+        "keywords" : [ "Blog" ]
+    }
+    </script>
+        
+            <title> - Hugo Future Imperfect</title>
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.40.1" />
+        
+
+
+        
+        
+            
+                <meta name="description" content="HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo">
+            
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="iTowns tutorial  Tutorial UNDER CONSTRUCTION with *iTowns v2.9.0*
+  iTowns examples. Source: iTowns website   Table of content  iTowns tutorial  Table of content Preamble  iTowns  Presentation Layers Tutorial goals  Web services  Quickstart  Installation  Node and npm  Linux Windows Mac OS  iTowns  iTowns Controls Hello world  Develop your own application  Separated files for a better management  HTML CSS JS JSON  Add Tiles layers Add vector Color layer from GeoJSON Add 3D layer (WMTS) Cool stuffs (split example)     Through this tutorial you will learn how to get your own running iTowns application."/>
+<meta name="twitter:site" content="@example"/>
+
+        <meta property="og:title" content="" />
+<meta property="og:description" content="iTowns tutorial  Tutorial UNDER CONSTRUCTION with *iTowns v2.9.0*
+  iTowns examples. Source: iTowns website   Table of content  iTowns tutorial  Table of content Preamble  iTowns  Presentation Layers Tutorial goals  Web services  Quickstart  Installation  Node and npm  Linux Windows Mac OS  iTowns  iTowns Controls Hello world  Develop your own application  Separated files for a better management  HTML CSS JS JSON  Add Tiles layers Add vector Color layer from GeoJSON Add 3D layer (WMTS) Cool stuffs (split example)     Through this tutorial you will learn how to get your own running iTowns application." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://thomleysens.github.io/test_hugo/blog/itowns/itowns_tutorial/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <meta property="og:image" content="https://thomleysens.github.io/test_hugo//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        
+<meta itemprop="name" content="">
+<meta itemprop="description" content="iTowns tutorial  Tutorial UNDER CONSTRUCTION with *iTowns v2.9.0*
+  iTowns examples. Source: iTowns website   Table of content  iTowns tutorial  Table of content Preamble  iTowns  Presentation Layers Tutorial goals  Web services  Quickstart  Installation  Node and npm  Linux Windows Mac OS  iTowns  iTowns Controls Hello world  Develop your own application  Separated files for a better management  HTML CSS JS JSON  Add Tiles layers Add vector Color layer from GeoJSON Add 3D layer (WMTS) Cool stuffs (split example)     Through this tutorial you will learn how to get your own running iTowns application.">
+
+
+
+<meta itemprop="wordCount" content="4799">
+
+
+
+<meta itemprop="keywords" content="" />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="https://thomleysens.github.io/test_hugo/css/main.css">
+            <link rel="stylesheet" href="https://thomleysens.github.io/test_hugo/css/add-on.css">
+            <link rel="stylesheet" href="https://thomleysens.github.io/test_hugo/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+<header id="header">
+    
+      <h1><a href="https://thomleysens.github.io/test_hugo/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>About
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/itemized/">
+                            <i class="fa fa-list">&nbsp;</i>Itemized
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="https://thomleysens.github.io/test_hugo/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="https://thomleysens.github.io/test_hugo/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>About
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/itemized/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>Itemized
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://thomleysens.github.io/test_hugo/blog/developerscentral/">Creating a New Theme</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2014-09-28'>
+                                    September 28, 2014</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/developerscentral/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/date2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/">Creating a New Theme</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2014-09-28'>
+                                    September 28, 2014</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img//pic03.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://thomleysens.github.io/test_hugo/blog/methodology_citygml/">Creating a New Theme</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2014-09-28'>
+                                    September 28, 2014</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/methodology_citygml/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/092014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/">Creating a New Theme</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2014-09-28'>
+                                    September 28, 2014</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/">Creating a New Theme</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2014-09-28'>
+                                    September 28, 2014</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">View more posts</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    
+    <div id="main">
+        <article class="post">
+            
+            <header>
+    <div class="title">
+        
+            <h1><a href="https://thomleysens.github.io/test_hugo/blog/itowns/itowns_tutorial/"></a></h1>
+            
+        
+        
+    </div>
+</header>
+
+            <div id="content">
+                
+
+<h1 id="itowns-tutorial">iTowns tutorial</h1>
+
+<blockquote>
+<p><strong><img src="./images/warning.png" width="10%"> Tutorial UNDER CONSTRUCTION with *iTowns v2.9.0</strong>*</p>
+</blockquote>
+
+<figure>
+  <img src="./images/iTowns_presentation.png" width="75%">
+  <figcaption><i>iTowns examples. Source: <a href="http://www.itowns-project.org/">iTowns website</a> </i></figcaption>
+</figure>
+
+<h2 id="table-of-content">Table of content</h2>
+
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+<ul>
+<li><a href="#itowns-tutorial">iTowns tutorial</a>
+
+<ul>
+<li><a href="#table-of-content">Table of content</a></li>
+<li><a href="#preamble">Preamble</a>
+
+<ul>
+<li><a href="#itowns">iTowns</a>
+
+<ul>
+<li><a href="#presentation">Presentation</a></li>
+<li><a href="#layers">Layers</a></li>
+<li><a href="#tutorial-goals">Tutorial goals</a></li>
+</ul></li>
+<li><a href="#web-services">Web services</a></li>
+</ul></li>
+<li><a href="#quickstart">Quickstart</a>
+
+<ul>
+<li><a href="#installation">Installation</a>
+
+<ul>
+<li><a href="#node-and-npm">Node and npm</a>
+
+<ul>
+<li><a href="#linux">Linux</a></li>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#mac-os">Mac OS</a></li>
+</ul></li>
+<li><a href="#itowns">iTowns</a></li>
+</ul></li>
+<li><a href="#itowns-controls">iTowns Controls</a></li>
+<li><a href="#hello-world">Hello world</a></li>
+</ul></li>
+<li><a href="#develop-your-own-application">Develop your own application</a>
+
+<ul>
+<li><a href="#separated-files-for-a-better-management">Separated files for a better management</a>
+
+<ul>
+<li><a href="#html">HTML</a></li>
+<li><a href="#css">CSS</a></li>
+<li><a href="#js">JS</a></li>
+<li><a href="#json">JSON</a></li>
+</ul></li>
+<li><a href="#add-tiles-layers">Add Tiles layers</a></li>
+<li><a href="#add-vector-color-layer-from-geojson">Add vector Color layer from GeoJSON</a></li>
+<li><a href="#add-3d-layer-wmts">Add 3D layer (<em>WMTS</em>)</a></li>
+<li><a href="#cool-stuffs-split-example">Cool stuffs (split example)</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<!-- /TOC -->
+
+<blockquote>
+<p>Through this tutorial you will learn how to get your own running iTowns application. It is based on iTowns <a href="http://www.itowns-project.org/itowns/docs/#tutorials/Create-a-simple-globe">tutorials</a> and <a href="http://www.itowns-project.org/itowns/examples/index.html">examples</a>.</p>
+</blockquote>
+
+<h2 id="development-advices">Development advices</h2>
+
+<ul>
+<li>Don&rsquo;t forget to use the development tools and console of your browser to monitor your developement and track the possible bugs/errors. To use these tools, in Mozilla Firefox browser for example, go to the <strong><em>Parameters</em></strong> then <strong><em>Web development</em></strong> then <strong><em>Development tools</em></strong> (<em>see figure below</em>)</li>
+</ul>
+
+<p><img src="./images/development_tools.png" width="75%"></p>
+
+<ul>
+<li>Remember that there is an <code>examples</code> directory in the <code>itowns</code> directory. You can study the examples to learn how to develop specific applications.</li>
+</ul>
+
+<h2 id="preamble">Preamble</h2>
+
+<h3 id="itowns">iTowns</h3>
+
+<h4 id="presentation">Presentation</h4>
+
+<p><a href="http://www.itowns-project.org/">iTowns</a> is a <a href="https://threejs.org/">Three.JS</a>-Based JS/WWEBGL framework for 3D GeoSpatial data visualization.</p>
+
+<h4 id="layers">Layers</h4>
+
+<p>iTowns <em>layers</em> are data layers that can be added to a <em>view</em>.
+iTowns can handle:
+* 3D Tiles
+* DEM
+* OGC standards
+* Point clouds
+* GeoJSON, GPX and KML
+* 3D formats (<em>Collada, GLTF, OBJ, &hellip;</em>)</p>
+
+<h4 id="tutorial-goals">Tutorial goals</h4>
+
+<p>In this tutorial you are going to learn how to:
+* install and set up iTowns
+* run your first <em>Hello World</em> application
+* set a clear environment (<em>set of files: HTML, JS, CSS, JSON</em>) for the development of your future iTowns apps.
+* Read and add as layers some data:
+  * tiles
+  * GeoJSON
+  * <a href="https://en.wikipedia.org/wiki/Web_Feature_Service">Web Feature Service</a> (<em>WFS</em>)</p>
+
+<h3 id="web-services">Web services</h3>
+
+<p>A web service is a software component with interface allowing communication with others computers on the network.</p>
+
+<p>This communication goes mostly through standardised URLs (<a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a>, <a href="https://en.wikipedia.org/wiki/Web_Map_Service">WMS</a>, <a href="https://en.wikipedia.org/wiki/Web_Feature_Service">WFS</a>, &hellip;).</p>
+
+<p>In this tutorial, we are going to use some of these services to get spatial data (<em>3D buildings of the city of Lyon in France, for example</em>) using some of the <a href="http://www.opengeospatial.org/">OGC</a> standards:
+  * <a href="https://fr.wikipedia.org/wiki/Web_Map_Tile_Service">WMTS</a>:
+    * Spatial tiles (<em>images</em>)
+    * Tiles are generated on a server. It is fast to get and render these tiles because these are images. This means that modifications are very limited on client side.
+  * <a href="https://en.wikipedia.org/wiki/Web_Feature_Service">WFS</a>:
+    * Spatial data to web client
+    * Modifications are possible (<em>more flexible than WMTS</em>)
+    * Transactional WFS allows user to add and modify data on the server</p>
+
+<h2 id="quickstart">Quickstart</h2>
+
+<blockquote>
+<p>First of all, you need to check if your browser does support WebGL. Click on the folowing link: <a href="http://www.itowns-project.org/itowns/examples/globe.html">http://www.itowns-project.org/itowns/examples/globe.html</a>
+Below is the expected result you should get on your browser:</p>
+
+<p><img src="./images/iTowns_Webgl_test.png" width="60%"></p>
+
+<p>If not, try to update your browser and update your graphics board. If there is still a problem, see <a href="http://get.webgl.org/">http://get.webgl.org/</a></p>
+</blockquote>
+
+<h3 id="installation">Installation</h3>
+
+<h4 id="node-and-npm">Node and npm</h4>
+
+<h5 id="linux">Linux</h5>
+
+<blockquote>
+<p><strong>Tested on *Ubuntu 18.04 LTS</strong>*</p>
+</blockquote>
+
+<ul>
+<li><p>Open a terminal</p>
+
+<ul>
+<li>Install <code>nodeJS</code> and <code>npm</code>:</li>
+</ul>
+
+<pre><code class="language-bash">sudo apt-get install nodejs
+sudo apt-get install npm
+sudo npm install -g n
+sudo n latest
+</code></pre></li>
+</ul>
+
+<h5 id="windows">Windows</h5>
+
+<ul>
+<li>Download and install the <a href="https://nodejs.org/en/download/">latest LTS NodeJS version</a>(<em>npm is included</em>)</li>
+</ul>
+
+<h5 id="mac-os">Mac OS</h5>
+
+<ul>
+<li>Download and install the <a href="https://nodejs.org/en/download/">latest LTS NodeJS version</a>(<em>npm is included</em>)</li>
+</ul>
+
+<h4 id="itowns-1">iTowns</h4>
+
+<ul>
+<li>Open a terminal and go to the directory where you want to install iTowns</li>
+<li>Git clone the iTowns repository: <code>git clone https://github.com/iTowns/itowns.git</code></li>
+<li>Check <a href="https://github.com/iTowns/itowns/releases/latest">here</a> the latest release to get the right tag: <em>example: v2.9.0</em></li>
+<li>Go to your iTowns local repository, <em>ex</em>: <code>cd ./documents/itowns</code></li>
+<li>Checkout the right tag, <em>ex</em>: <code>git checkout tags/v2.9.0</code></li>
+<li>Then do an installation: <code>npm install</code></li>
+<li>You will have something like this in your terminal:</li>
+</ul>
+
+<pre><code class="language-bash">  &gt; puppeteer@1.12.2 install /home/thomas/Documents/outils/3D_test/itowns/node_modules/puppeteer
+  &gt; node install.js
+
+  Downloading Chromium r624492 - 107.6 Mb [====================] 100% 0.0s
+  Chromium downloaded to /home/thomas/Documents/outils/3D_test/itowns/node_modules/puppeteer/.local-chromium/linux-624492
+
+  &gt; itowns@2.9.0 prepare /home/thomas/Documents/outils/3D_test/itowns
+  &gt; node ./config/prepare.js &amp;&amp; node ./config/replace.config.js
+
+  Warning PUPPETEER_SKIP_CHROMIUM_DOWNLOAD is undefined,
+  the installation'll be longer because Puppeteer'll download Chromium,
+  only needed for testing. Read CODING.md for more information.
+
+  Node.js version : 11.13.0
+  Npm version : 6.7.0
+</code></pre>
+
+<ul>
+<li>Then you can run iTowns with <code>npm start</code></li>
+<li>You should have something like this in your terminal:</li>
+</ul>
+
+<pre><code class="language-bash">  &gt; itowns@2.9.0 start /home/thomas/Documents/outils/3D_test/itowns
+  &gt; cross-env NODE_ENV=development webpack-dev-server -d --inline --hot
+
+  ℹ ｢wds｣: Project is running at http://localhost:8080/
+  ℹ ｢wds｣: webpack output is served from /dist/
+  ℹ ｢wdm｣: Hash: 2d8266d5c91a0ba51931
+  Version: webpack 4.29.6
+  Time: 13781ms
+  Built at: 2019-04-04 11:15:51
+
+  Asset      Size  Chunks             Chunk Names
+  debug.js  9.45 MiB   debug  [emitted]  debug
+  itowns.js  9.73 MiB  itowns  [emitted]  itowns
+  Entrypoint itowns = itowns.js
+  Entrypoint debug = itowns.js debug.js
+  [0] multi (webpack)-dev-server/client?http://localhost:8080 (webpack)/hot/dev-server.js @babel/polyfill url-polyfill whatwg-fetch ./src/MainBundle.js 88 bytes {itowns} [built]
+  [3] multi (webpack)-dev-server/client?http://localhost:8080 (webpack)/hot/dev-server.js ./utils/debug/Main.js 52 bytes {debug} [built]
+  [./node_modules/@babel/polyfill/lib/index.js] 893 bytes {itowns} [built]
+  [./node_modules/core-js/es6/index.js] 5.74 KiB {itowns} [built]
+  [./node_modules/core-js/fn/array/includes.js] 109 bytes {itowns} [built]
+  [./node_modules/core-js/fn/object/entries.js] 109 bytes {itowns} [built]
+  [./node_modules/core-js/fn/object/get-own-property-descriptors.js] 148 bytes {itowns} [built]
+  [./node_modules/core-js/fn/object/values.js] 107 bytes {itowns} [built]
+  [./node_modules/core-js/fn/promise/finally.js] 166 bytes {itowns} [built]
+  [./node_modules/url-polyfill/url-polyfill.js] 13.2 KiB {itowns} [built]
+  [./node_modules/webpack-dev-server/client/index.js?http://localhost:8080] (webpack)-dev-server/client?http://localhost:8080 8.1 KiB {itowns} {debug} [built]
+  [./node_modules/webpack/hot/dev-server.js] (webpack)/hot/dev-server.js 1.61 KiB {itowns} {debug} [built]
+  [./node_modules/whatwg-fetch/fetch.js] 13 KiB {itowns} [built]
+  [./src/MainBundle.js] 118 bytes {itowns} [built]
+  [./utils/debug/Main.js] 293 bytes {debug} [built]
+  + 764 hidden modules
+  ℹ ｢wdm｣: Compiled successfully.
+</code></pre>
+
+<ul>
+<li><p>Then you can go to <a href="http://localhost:8080/">http://localhost:8080/</a> to check if you can see something like this in your browser:
+<img src="./images/itowns_globe.png" width="60%"></p></li>
+
+<li><p>You can stop the server with <code>Ctrl+C</code> in the terminal</p></li>
+</ul>
+
+<h3 id="itowns-controls">iTowns Controls</h3>
+
+<table style="width:100%">
+ <tr>
+   <th>What</th>
+   <th>How</th>
+ </tr>
+ <tr>
+   <td><i><b>Translation: globe</i></b></td>
+   <td><img src="./images/translation_globe.png" width="30%"></td>
+ </tr>
+ <tr>
+   <td><i><b>Translation: camera</i></b></td>
+   <td><img src="./images/translation_camera.png" width="30%"></td>
+ </tr>
+ <tr>
+   <td><i><b>Rotation: camera</i></b></td>
+   <td><img src="./images/rotation_camera.png" width="46%"></td>
+ </tr>
+ <tr>
+   <td><i><b>Zoom</i></b></td>
+   <td><img src="./images/zoom.png" width="30%"></td>
+ </tr>
+</table>
+
+<h3 id="hello-world">Hello world</h3>
+
+<p>Here we are going to develop a short app and get it running quickly. Our explanations are based on this <a href="http://www.itowns-project.org/itowns/docs/#tutorials/Create-a-simple-globe">iTowns tutorial</a>.</p>
+
+<ol>
+<li>Create a new directory inside the iTowns directory, name it <code>globe_viewer</code> for example.</li>
+<li>Create a new HTML document. Name it <code>index.html</code></li>
+<li>Open <code>index.html</code> with your favorite text editor. If you don&rsquo;t have any, you can try the open source text editor <a href="https://atom.io/">Atom</a>.</li>
+<li>Copy &amp; paste this base webpage HTML code:</li>
+</ol>
+
+<pre><code class="language-html">  &lt;!doctype html&gt;
+      &lt;html&gt;
+      &lt;head&gt;
+          &lt;title&gt;Urban Viewer&lt;/title&gt;
+          &lt;meta charset=&quot;UTF-8&quot;&gt;
+          &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+          &lt;style type=&quot;text/css&quot;&gt;
+                html {
+                    height: 100%;
+                }
+
+                body {
+                    margin: 0;
+                    overflow: hidden;
+                    height: 100%;
+                }
+
+                div {
+                    margin : auto auto;
+                    width: 100%;
+                    padding: 0;
+                    height: 100%
+                }
+          &lt;/style&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+          &lt;script src=&quot;../dist/itowns.js&quot;&gt;&lt;/script&gt;
+          &lt;div id=&quot;viewerDiv&quot;&gt;&lt;/div&gt;
+          &lt;script type=&quot;text/javascript&quot;&gt;
+              // JS CODE HERE
+          &lt;/script&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+</code></pre>
+
+<ol>
+<li><p>Create a <em>view</em>:</p>
+
+<ul>
+<li>A <em>view</em> element is required to display anything with iTowns.</li>
+<li>This <em>view</em> needs to be attached to an element of the page so we need to indicate it in the <em>Javascript</em> section</li>
+<li>The camera requires parameters in order to be set. Parameters take place in  a <em>position</em> object with <a href="https://en.wikipedia.org/wiki/World_Geodetic_System#WGS84">WGS84</a> (EPSG:4326) coordinates:
+
+<ul>
+<li>longitude</li>
+<li>latitude</li>
+<li>altitude</li>
+</ul></li>
+<li>Copy and paste the JS code below to replace <code>// JS CODE HERE</code></li>
+</ul>
+
+<pre><code class="language-javascript">var viewerDiv = document.getElementById('viewerDiv');
+var position = new itowns.Coordinates('WGS84', 2.35, 48.8, 25e6);
+var view = new itowns.GlobeView(viewerDiv, position);
+</code></pre></li>
+
+<li><p>You should obtain this:</p></li>
+</ol>
+
+<pre><code class="language-html">  &lt;!doctype html&gt;
+      &lt;html&gt;
+      &lt;head&gt;
+          &lt;title&gt;Urban Viewer&lt;/title&gt;
+          &lt;meta charset=&quot;UTF-8&quot;&gt;
+          &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+          &lt;style type=&quot;text/css&quot;&gt;
+                html {
+                    height: 100%;
+                }
+
+                body {
+                    margin: 0;
+                    overflow: hidden;
+                    height: 100%;
+                }
+
+                div {
+                    margin : auto auto;
+                    width: 100%;
+                    padding: 0;
+                    height: 100%
+                }
+          &lt;/style&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+          &lt;script src=&quot;../dist/itowns.js&quot;&gt;&lt;/script&gt;
+          &lt;div id=&quot;viewerDiv&quot;&gt;&lt;/div&gt;
+          &lt;script type=&quot;text/javascript&quot;&gt;
+              var viewerDiv = document.getElementById('viewerDiv');
+              var position = new itowns.Coordinates('WGS84', 2.35, 48.8, 25e6);
+              var view = new itowns.GlobeView(viewerDiv, position);  
+          &lt;/script&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+</code></pre>
+
+<ol>
+<li>Save your HTML file and open a terminal in your app directory (<em>where your <code>index.html</code> is</em>) and write <code>npm start</code> (<em>to run your local server</em>)</li>
+<li>Go to <a href="http://localhost:8080/globe_viewer/index.html">http://localhost:8080/globe_viewer/index.html</a> (<em>it runs on your local server on the 8080 port</em>)</li>
+<li>You should see something like this (<em>if not, remember you can see errors and warnings using the web development tools of your browser</em>)
+<img src="./images/iTowns_blue_globe.png" width="60%"></li>
+
+<li><p>Now we will add a basic layer composed of aerial photo as <em>iTowns ColorLayer</em>:</p>
+
+<ul>
+<li><p>we choose images from a WMTS server, so we need to use <em><a href="http://www.itowns-project.org/itowns/docs/#api/Source/WMTSSource">WMTSSource</a></em> and set three elements:</p></li>
+
+<li><p><code>url</code>: describes the path to the WMTS service</p></li>
+
+<li><p><code>name</code> and <code>tileMatrixSet</code>: build the URL for each image</p></li>
+</ul></li>
+</ol>
+
+<pre><code class="language-javascript">    var orthoSource = new itowns.WMTSSource({
+      url: 'http://wxs.ign.fr/3ht7xcw6f7nciopo16etuqp2/geoportail/wmts',
+      name: 'ORTHOIMAGERY.ORTHOPHOTOS',
+      tileMatrixSet: 'PM',
+      format: 'image/jpeg',
+    });
+
+    var orthoLayer = new itowns.ColorLayer('Ortho', {
+        source: orthoSource,
+    });
+
+    view.addLayer(orthoLayer);
+</code></pre>
+
+<ol>
+<li>Add this piece of code inside the JS section, save your file and refresh the browser page and you should obtain this:
+<img src="./images/iTowns_basic_ortho.png" width="60%"></li>
+<li>To finish this quickstart tutorial we will add an elevation layer by adding this in the JS section:</li>
+</ol>
+
+<pre><code class="language-javascript">    var elevationSource = new itowns.WMTSSource({
+        url: 'http://wxs.ign.fr/3ht7xcw6f7nciopo16etuqp2/geoportail/wmts',
+        name: 'ELEVATION.ELEVATIONGRIDCOVERAGE',
+        tileMatrixSet: 'WGS84G',
+        format: 'image/x-bil;bits=32'
+    });
+
+    var elevationLayer = new itowns.ElevationLayer('MNT_WORLD', {
+        source: elevationSource,
+    });
+
+    view.addLayer(elevationLayer);
+</code></pre>
+
+<ol>
+<li>Edit your HTML file, save it, reload browser page, zoom in the Alps for example, play with iTows controls (<em>pan globe and camera, rotate camera</em>) and you should see something like this:
+<img src="./images/iTowns_basic_elevation.png" width="60%"></li>
+</ol>
+
+<p>So you have a local server running a simple iTowns globe with ortho photos and elevation. Find below the complete code.</p>
+
+<pre><code class="language-html">  &lt;!doctype html&gt;
+      &lt;html&gt;
+      &lt;head&gt;
+          &lt;title&gt;Urban Viewer&lt;/title&gt;
+          &lt;meta charset=&quot;UTF-8&quot;&gt;
+          &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+          &lt;style type=&quot;text/css&quot;&gt;
+              html {
+                  height: 100%;
+              }
+
+              body {
+                  margin: 0;
+                  overflow: hidden;
+                  height: 100%;
+              }
+
+              div {
+                  margin : auto auto;
+                  width: 100%;
+                  padding: 0;
+                  height: 100%
+              }
+      &lt;/style&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+          &lt;script src=&quot;../dist/itowns.js&quot;&gt;&lt;/script&gt;
+          &lt;div id=&quot;viewerDiv&quot;&gt;&lt;/div&gt;
+          &lt;script type=&quot;text/javascript&quot;&gt;
+            var viewerDiv = document.getElementById('viewerDiv');
+             var position = new itowns.Coordinates('WGS84', 2.35, 48.8, 25e6);
+             var view = new itowns.GlobeView(viewerDiv, position);
+             var orthoSource = new itowns.WMTSSource({
+                    url: 'http://wxs.ign.fr/3ht7xcw6f7nciopo16etuqp2/geoportail/wmts',
+                    name: 'ORTHOIMAGERY.ORTHOPHOTOS',
+                    tileMatrixSet: 'PM',
+                    format: 'image/jpeg',
+                });
+
+              var orthoLayer = new itowns.ColorLayer('Ortho', {
+                  source: orthoSource,
+              });
+
+              view.addLayer(orthoLayer);
+
+              var elevationSource = new itowns.WMTSSource({
+                    url: 'http://wxs.ign.fr/3ht7xcw6f7nciopo16etuqp2/geoportail/wmts',
+                    name: 'ELEVATION.ELEVATIONGRIDCOVERAGE',
+                    tileMatrixSet: 'WGS84G',
+                    format: 'image/x-bil;bits=32'
+                });
+
+              var elevationLayer = new itowns.ElevationLayer('MNT_WORLD', {
+                    source: elevationSource,
+              });
+
+    view.addLayer(elevationLayer);
+          &lt;/script&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+</code></pre>
+
+<p>It was simple and everything was on a unique HTML file. But if you need to develop your own application, you will probably need a lot if layers and functions, so it is time to learn how to add others data sources but also how to get a cleaner organisation and code.</p>
+
+<h2 id="develop-your-own-application">Develop your own application</h2>
+
+<p>We will learn here how to:
+* get a clean development environment
+* set and add tile layer in a proper way
+* set and add GeoJSON
+* set and add 3D layer (<em>WMTS</em>)
+* go further with <a href="http://www.itowns-project.org/itowns/examples/index.html">iTowns example</a> and try cool stuffs</p>
+
+<h3 id="separated-files-for-a-better-management">Separated files for a better management</h3>
+
+<p>In order to manage, change and update your code, it is simpler and better for you to have a file for each programming language and layer definition.</p>
+
+<h4 id="html">HTML</h4>
+
+<ul>
+<li>Create a new directory for your new application on the root of the iTowns directory. Name it, for example, <code>my_app</code>.</li>
+<li>Create a new HTML file and copy/paste this, then save it in the root of your <code>my_app</code> directory:</li>
+</ul>
+
+<pre><code class="language-html">  &lt;!doctype html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Test Globe&lt;/title&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;../examples/css/example.css&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./CSS/custom.css&quot;&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;http://maps.stamen.com/js/tile.stamen.js?v1.3.0&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;../examples/js/GUI/dat.gui/dat.gui.min.js&quot;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div id=&quot;viewerDiv&quot; class=&quot;viewer&quot;&gt;
+            &lt;span id=&quot;tooltipDiv&quot; class=&quot;tooltip&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;script src=&quot;../examples/js/GUI/GuiTools.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;../dist/itowns.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;../examples/js/FeatureToolTip.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;./JS/config.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+</code></pre>
+
+<ul>
+<li><p>Some explanations:</p>
+
+<ul>
+<li>In the <code>head</code> section we indicate links to 2 CSS file (<em>on from iTowns directory and one that will be created</em>) to get style elements in separated files:</li>
+</ul>
+
+<pre><code class="language-html">  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;../examples/css/example.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./CSS/custom.css&quot;&gt;
+</code></pre>
+
+<ul>
+<li>There is also a link to JS elements (<em>a local file and an online one</em>) to manage some tile layers and iTowns tools:</li>
+</ul>
+
+<pre><code class="language-html">  &lt;script type=&quot;text/javascript&quot; src=&quot;http://maps.stamen.com/js/tile.stamen.js?v1.3.0&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;../examples/js/GUI/dat.gui/dat.gui.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<ul>
+<li>In <code>body</code> section, we find a <code>div</code> that will contain the <code>view</code> and some <code>tooltips</code> to get popup when hovering on some layers. We also find links to iTowns JS scripts to create and manage iTowns elements and tools:</li>
+</ul>
+
+<pre><code class="language-html">  &lt;div id=&quot;viewerDiv&quot; class=&quot;viewer&quot;&gt;
+      &lt;span id=&quot;tooltipDiv&quot; class=&quot;tooltip&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;script src=&quot;../examples/js/GUI/GuiTools.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;../dist/itowns.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;../examples/js/FeatureToolTip.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<ul>
+<li>At least, there is a link to a JS script that will be created:</li>
+</ul>
+
+<pre><code class="language-html">  &lt;script src=&quot;./JS/config.js&quot;&gt;&lt;/script&gt;
+</code></pre></li>
+</ul>
+
+<h4 id="css">CSS</h4>
+
+<ul>
+<li>On the root of your directory, create a directory named <code>CSS</code></li>
+<li>Inside, create a new file named <code>custom.css</code>:</li>
+</ul>
+
+<pre><code class="language-css">  .tooltip {
+      display: none;
+      background-image: linear-gradient(rgba(80, 80, 80,0.95), rgba(60, 60, 60,0.95));
+      box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.5);
+      margin-top: 20px;
+      margin-left: 20px;
+      padding: 10px;
+      position: absolute;
+      z-index: 1000;
+      color: #CECECE;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: left;
+  }
+  .coord {
+      font-size: 12px;
+      padding-left:20px;
+      color: #93B7C0;
+      text-shadow: 0px 1px 0px rgba(200,200,200,.3), 0px -1px 0px rgba(30,30,30,.7);
+  }
+</code></pre>
+
+<ul>
+<li>This CSS code is based on <a href="http://www.itowns-project.org/itowns/examples/globe_vector.html">iTowns globe example</a> and completes the iTowns CSS to get tooltips working and make edition easier.</li>
+</ul>
+
+<h4 id="js">JS</h4>
+
+<ul>
+<li>Now we can do the same for JS files. On the root of your directory, create a directory named <code>JS</code></li>
+<li>Inside, create a new file named <code>config.js</code>.</li>
+<li>We want to be able to:
+
+<ul>
+<li>set variables (<em>some of them need to be global</em>)</li>
+<li>put some layers (<em>Tiles, GeoJSON; &hellip;</em>) in list and wait until globe view is initialized to get chosen layers on top. This is required because Javascript is asynchronous.<br /></li>
+</ul></li>
+<li>So first, init globe and menu and some variables in the <code>config.js</code> file (<em>creation of 2 lists for promises - we will explain that later - and layers variables</em>).</li>
+</ul>
+
+<pre><code class="language-javascript">// Globe view
+var viewerDiv = document.getElementById('viewerDiv');
+var position = new itowns.Coordinates('WGS84', 2.35, 48.8, 25e6);
+var view = new itowns.GlobeView(viewerDiv, position);
+var menuGlobe = new GuiTools('menuDiv', view);
+
+var promises = [];
+var promises2 = [];
+var tileLayer1;
+var tileLayer2;
+var ariegeLayer;
+var moreThanOne;
+</code></pre>
+
+<h4 id="json">JSON</h4>
+
+<p>In order to have a clean code and be able to manage it, you may use JSON files to define the tiles layers.</p>
+
+<ul>
+<li>Create a new directory on the root of your application: <code>JSON_layers</code></li>
+
+<li><p>Create 2 new JSON files:</p>
+
+<ul>
+<li><code>OSM_stamen_terrain.json</code>:</li>
+</ul>
+
+<pre><code class="language-json">  {
+    &quot;id&quot;:&quot;STAMEN TERRAIN&quot;,
+    &quot;source&quot;:{
+      &quot;format&quot;: &quot;image/jpg&quot;,
+      &quot;url&quot;: &quot;https://stamen-tiles.a.ssl.fastly.net/terrain/${z}/${x}/${y}.jpg&quot;,
+      &quot;attribution&quot;: {
+        &quot;name&quot;: &quot;OpenStreetMap&quot;,
+        &quot;url&quot;: &quot;http://www.openstreetmap.org/&quot;
+      },
+      &quot;tileMatrixSet&quot;: &quot;PM&quot;
+    }
+  }  
+</code></pre>
+
+<ul>
+<li><code>OSM_cartodb_dark.json</code>:</li>
+</ul>
+
+<pre><code class="language-json">{
+  &quot;id&quot;:&quot;CARTODB DARK&quot;,
+  &quot;source&quot;:{
+    &quot;isInverted&quot;: true,
+    &quot;format&quot;: &quot;image/png&quot;,
+    &quot;url&quot;: &quot;https://cartodb-basemaps-a.global.ssl.fastly.net/dark_all/${z}/${x}/${y}.png&quot;,
+    &quot;attribution&quot;: {
+        &quot;name&quot;: &quot;Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL.&quot;,
+        &quot;url&quot;: &quot;http://carto.com/basemaps&quot;
+    },
+    &quot;tileMatrixSet&quot;: &quot;PM&quot;
+  }
+}
+</code></pre></li>
+</ul>
+
+<h3 id="add-tiles-layers">Add Tiles layers</h3>
+
+<p>The 2 JSON files you have just created will be used to add layer on the <code>view</code>:
+* Add this to the <code>config.js</code> file:</p>
+
+<pre><code class="language-javascript">  // Add two imagery layers to the scene
+  // This layer is defined in a json file but it could be defined as a plain js
+  // object. See Layer* for more info.
+  function addColorLayerFromConfig(config) {
+      var layer = new itowns.ColorLayer(config.id, config)
+      if (moreThanOne &gt; 0){layer.visible = false;}
+      else {layer.visible = true;};
+      moreThanOne++;
+
+      return view.addLayer(layer).then(function _() {
+                      menuGlobe.addLayerGUI.bind(menuGlobe);
+                      itowns.ColorLayersOrdering.moveLayerToIndex(view, config.id, 0);
+                  });
+  };
+  promises.push(itowns.Fetcher.json('./JSON_layers/OSM_stamen_terrain.json')
+      .then(function _(c) {
+          c.source = new itowns.TMSSource(c.source);
+          return c;
+      })
+      .then(addColorLayerFromConfig)
+      .then(function _(l) { tileLayer1 = l; }));
+
+  promises.push(itowns.Fetcher.json('./JSON_layers/OSM_cartodb_dark.json')
+      .then(function _(c) {
+          c.source = new itowns.TMSSource(c.source);
+          return c;
+      })
+      .then(addColorLayerFromConfig)
+      .then(function _(l) { tileLayer2 = l; }));
+</code></pre>
+
+<ul>
+<li>The <code>addColorLayerFromConfig</code> function add new <code>itowns.ColorLayer</code> to the <code>view</code>. The 2 tiles layers are added to the <code>promise</code> array in order to manage them in an asynchronous system. We check if there is already a layer on the <code>view</code> and if it&rsquo;s the case, the new layer visibility is set to false (<em>but can be set to true via the application menu</em>)</li>
+<li>Your JS file should look like this:</li>
+</ul>
+
+<pre><code class="language-javascript">  // Globe view
+  var viewerDiv = document.getElementById('viewerDiv');
+  var position = new itowns.Coordinates('WGS84', 2.35, 48.8, 25e6);
+  var view = new itowns.GlobeView(viewerDiv, position);
+  var menuGlobe = new GuiTools('menuDiv', view);
+
+  var promises = [];
+  var promises2 = [];
+  var tileLayer1;
+  var tileLayer2;
+  var moreThanOne = 0
+
+  // Add two imagery layers to the scene
+  // This layer is defined in a json file but it could be defined as a plain js
+  // object. See Layer* for more info.
+  function addColorLayerFromConfig(config) {
+      var layer = new itowns.ColorLayer(config.id, config)
+      if (moreThanOne &gt; 0){layer.visible = false;}
+      else {layer.visible = true;};
+      moreThanOne++;
+
+      return view.addLayer(layer).then(function _() {
+                      menuGlobe.addLayerGUI.bind(menuGlobe);
+                      itowns.ColorLayersOrdering.moveLayerToIndex(view, config.id, 0);
+                  });
+  };
+  promises.push(itowns.Fetcher.json('./JSON_layers/OSM_stamen_terrain.json')
+      .then(function _(c) {
+          c.source = new itowns.TMSSource(c.source);
+          return c;
+      })
+      .then(addColorLayerFromConfig)
+      .then(function _(l) { tileLayer1 = l; }));
+
+  promises.push(itowns.Fetcher.json('./JSON_layers/OSM_cartodb_dark.json')
+      .then(function _(c) {
+          c.source = new itowns.TMSSource(c.source);
+          return c;
+      })
+      .then(addColorLayerFromConfig)
+      .then(function _(l) { tileLayer2 = l; }));
+</code></pre>
+
+<h3 id="add-elevation-layers">Add Elevation layers</h3>
+
+<pre><code class="language-javascript">  // Add two elevation layers.
+  // These will deform iTowns globe geometry to represent terrain elevation.
+  function addElevationLayerFromConfig(config) {
+      config.source = new itowns.WMTSSource(config.source);
+      var layer = new itowns.ElevationLayer(config.id, config);
+      view.addLayer(layer).then(menuGlobe.addLayerGUI.bind(menuGlobe));
+  }
+  itowns.Fetcher.json('../examples/layers/JSONLayers/WORLD_DTM.json').then(addElevationLayerFromConfig);
+  itowns.Fetcher.json('../examples/layers/JSONLayers/IGN_MNT_HIGHRES.json').then(addElevationLayerFromConfig);
+</code></pre>
+
+<ul>
+<li><p>Refresh your local server and you should get this on your browser:
+<img src="./images/itowns_tiles_layers.png" width="70%"></p></li>
+
+<li><p>You can show and hide the layers via the menu and set opacity</p></li>
+</ul>
+
+<h3 id="add-vector-colorlayer-from-geojson">Add vector ColorLayer from GeoJSON</h3>
+
+<p>We can now add a <code>ColorLayer</code> as vector layer from GeoJSON data.</p>
+
+<ul>
+<li>In the JS file, add this:</li>
+</ul>
+
+<pre><code class="language-javascript">  promises2.push(itowns.Fetcher.json('https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements/09-ariege/departement-09-ariege.geojson')
+        .then(function _(geojson) {
+            return itowns.GeoJsonParser.parse(geojson, {
+                buildExtent: true,
+                crsIn: 'EPSG:4326',
+                crsOut: view.tileLayer.extent.crs,
+                mergeFeatures: true,
+                withNormal: false,
+                withAltitude: false,
+            });
+        }).then(function _(parsedData) {
+            var ariegeSource = new itowns.FileSource({
+                parsedData,
+            });
+
+            ariegeLayer = new itowns.ColorLayer('Ariege', {
+                name: 'ariege',
+                transparent: true,
+                style: {
+                    fill: 'orange',
+                    fillOpacity: 0.5,
+                    stroke: 'white',
+                },
+                source: ariegeSource,
+            });
+            // return ariegeLayer;
+            return view.addLayer(ariegeLayer)
+                        .then(function _() {
+                            menuGlobe.addLayerGUI.bind(menuGlobe);
+                            itowns.ColorLayersOrdering.moveLayerToIndex(view, ariegeLayer.id, 2);
+                        })
+                        .then(function _(l) { ariegeLayer = l; });
+        })
+      );
+</code></pre>
+
+<ul>
+<li>We push to a second list of promises a GeoJSON that is fetched with the <code>itowns.Fetcher</code>:</li>
+</ul>
+
+<pre><code class="language-javascript">  promises2.push(itowns.Fetcher.json('https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements/09-ariege/departement-09-ariege.geojson')
+</code></pre>
+
+<ul>
+<li>The fetched file is parsed with the <code>itowns.GeoJsonParser</code> (<em>with settings like <code>crsIn</code></em>):</li>
+</ul>
+
+<pre><code class="language-javascript">  .then(function _(geojson) {
+      return itowns.GeoJsonParser.parse(geojson, {
+          buildExtent: true,
+          crsIn: 'EPSG:4326',
+          crsOut: view.tileLayer.extent.crs,
+          mergeFeatures: true,
+          withNormal: false,
+          withAltitude: false,
+      });
+  })
+</code></pre>
+
+<ul>
+<li>Then add parsed data as an <code>itowns.FileSource</code> and create a new source and set a new <code>itowns.ColorLayer</code> with this new source and return this layer added to the <code>view</code> and to to <code>menu</code> and move it to the top (<em>GeoJSON layer must be on top of tiles layers</em>):</li>
+</ul>
+
+<pre><code class="language-javascript">  .then(function _(parsedData) {
+      var ariegeSource = new itowns.FileSource({
+          parsedData,
+      });
+
+      ariegeLayer = new itowns.ColorLayer('Ariege', {
+          name: 'ariege',
+          transparent: true,
+          style: {
+              fill: 'orange',
+              fillOpacity: 0.5,
+              stroke: 'white',
+          },
+          source: ariegeSource,
+      });
+      // return ariegeLayer;
+      return view.addLayer(ariegeLayer)
+                  .then(function _() {
+                      menuGlobe.addLayerGUI.bind(menuGlobe);
+                      itowns.ColorLayersOrdering.moveLayerToIndex(view, ariegeLayer.id, 2);
+                  })
+                  .then(function _(l) { ariegeLayer = l; });
+  })
+</code></pre>
+
+<ul>
+<li>Finally we check the promises (<em>GeoJSON layer must render after tiles layers</em>) because JS is asynchronous:</li>
+</ul>
+
+<pre><code class="language-javascript">  // Listen for globe full initialisation event
+  view.addEventListener(itowns.VIEW_EVENTS.LAYERS_INITIALIZED, function _() {
+        Promise.all(promises)
+        .then(Promise.all(promises2))
+        .then(new ToolTip(view,
+          document.getElementById('viewerDiv'),
+          document.getElementById('tooltipDiv')))
+  });
+</code></pre>
+
+<ul>
+<li>Your entire JS file should be:</li>
+</ul>
+
+<pre><code class="language-javascript">  // Globe view
+  var viewerDiv = document.getElementById('viewerDiv');
+  var position = new itowns.Coordinates('WGS84', 2.35, 48.8, 25e6);
+  var view = new itowns.GlobeView(viewerDiv, position);
+  var menuGlobe = new GuiTools('menuDiv', view);
+
+  var promises = [];
+  var promises2 = [];
+  var tileLayer1;
+  var tileLayer2;
+  var ariegeLayer;
+  var moreThanOne = 0
+
+  // Add two imagery layers to the scene
+  // This layer is defined in a json file but it could be defined as a plain js
+  // object. See Layer* for more info.
+  function addColorLayerFromConfig(config) {
+      var layer = new itowns.ColorLayer(config.id, config)
+      if (moreThanOne &gt; 0){layer.visible = false;}
+      else {layer.visible = true;};
+      moreThanOne++;
+
+      return view.addLayer(layer).then(function _() {
+                      menuGlobe.addLayerGUI.bind(menuGlobe);
+                      itowns.ColorLayersOrdering.moveLayerToIndex(view, config.id, 0);
+                  });
+  };
+  promises.push(itowns.Fetcher.json('./JSON_layers/OSM_stamen_terrain.json')
+      .then(function _(c) {
+          c.source = new itowns.TMSSource(c.source);
+          return c;
+      })
+      .then(addColorLayerFromConfig)
+      .then(function _(l) { tileLayer1 = l; }));
+
+  promises.push(itowns.Fetcher.json('./JSON_layers/OSM_cartodb_dark.json')
+      .then(function _(c) {
+          c.source = new itowns.TMSSource(c.source);
+          return c;
+      })
+      .then(addColorLayerFromConfig)
+      .then(function _(l) { tileLayer2 = l; }));
+
+  promises2.push(itowns.Fetcher.json('https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements/09-ariege/departement-09-ariege.geojson')
+        .then(function _(geojson) {
+            return itowns.GeoJsonParser.parse(geojson, {
+                buildExtent: true,
+                crsIn: 'EPSG:4326',
+                crsOut: view.tileLayer.extent.crs,
+                mergeFeatures: true,
+                withNormal: false,
+                withAltitude: false,
+            });
+        }).then(function _(parsedData) {
+            var ariegeSource = new itowns.FileSource({
+                parsedData,
+            });
+
+            ariegeLayer = new itowns.ColorLayer('Ariege', {
+                name: 'ariege',
+                transparent: true,
+                style: {
+                    fill: 'orange',
+                    fillOpacity: 0.5,
+                    stroke: 'white',
+                },
+                source: ariegeSource,
+            });
+            // return ariegeLayer;
+            return view.addLayer(ariegeLayer)
+                        .then(function _() {
+                            menuGlobe.addLayerGUI.bind(menuGlobe);
+                            itowns.ColorLayersOrdering.moveLayerToIndex(view, ariegeLayer.id, 2);
+                        })
+                        .then(function _(l) { ariegeLayer = l; });
+        })
+      );
+
+  // Add two elevation layers.
+  // These will deform iTowns globe geometry to represent terrain elevation.
+  function addElevationLayerFromConfig(config) {
+      config.source = new itowns.WMTSSource(config.source);
+      var layer = new itowns.ElevationLayer(config.id, config);
+      view.addLayer(layer).then(menuGlobe.addLayerGUI.bind(menuGlobe));
+  }
+  itowns.Fetcher.json('../examples/layers/JSONLayers/WORLD_DTM.json').then(addElevationLayerFromConfig);
+  itowns.Fetcher.json('../examples/layers/JSONLayers/IGN_MNT_HIGHRES.json').then(addElevationLayerFromConfig);
+
+  // Listen for globe full initialisation event
+  view.addEventListener(itowns.VIEW_EVENTS.LAYERS_INITIALIZED, function _() {
+        Promise.all(promises)
+        .then(Promise.all(promises2))
+        .then(new ToolTip(view,
+          document.getElementById('viewerDiv'),
+          document.getElementById('tooltipDiv')))
+  });
+</code></pre>
+
+<ul>
+<li>Refresh <a href="http://localhost:8080/my_app/index.html">http://localhost:8080/my_app/index.html</a>, zoom to the <em>Ariege</em> departement and you should see something like this (<em>with a popup when hovering</em>):
+<img src="./images/itowns_all_layers.png" width="70%"></li>
+</ul>
+
+<h3 id="add-3d-layer-wms">Add 3D layer (<em>WMS</em>)</h3>
+
+<blockquote>
+<p>Our example is based on <a href="http://www.itowns-project.org/itowns/examples/globe_wfs_color.html">iTowns example</a> (<em>you can find the <code>html</code> file in the <code>examples</code> directory within the <code>itowns</code> directory on your computer</em>)</p>
+</blockquote>
+
+<ul>
+<li>Create a new directory inside the <code>itowns</code> directory</li>
+<li>Create an <code>index.html</code>:</li>
+</ul>
+
+<pre><code class="language-html">  &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Itowns - Globe + WFS&lt;/title&gt;
+
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;../examples/css/example.css&quot;&gt;
+        &lt;script src=&quot;../examples/js/GUI/dat.gui/dat.gui.min.js&quot;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div id=&quot;viewerDiv&quot;&gt;&lt;/div&gt;
+        &lt;script src=&quot;../examples/js/GUI/GuiTools.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;../dist/itowns.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;../examples/js/loading_screen.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;../examples/js/proj4defs/3946.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;../dist/debug.js&quot;&gt;&lt;/script&gt;
+        &lt;div class=&quot;help&quot;&gt;
+            &lt;p&gt;&lt;b&gt;Building Information&lt;/b&gt;&lt;/p&gt;
+            &lt;ul id=&quot;info&quot;&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;script src=&quot;./functions.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;./config.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+</code></pre>
+
+<ul>
+<li>Create a <code>function.js</code> javascript file. In order to get readable code, we are going to put the functions in this file and not in <code>config.js</code>. That&rsquo;s why we imported it before <code>config.js</code> in the <code>HTML body</code> with:</li>
+</ul>
+
+<pre><code class="language-javascript">  &lt;script src=&quot;./functions.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<ul>
+<li>Here are the functions:</li>
+</ul>
+
+<pre><code class="language-javascript">  function addElevationLayerFromConfig(config) {
+    config.source = new itowns.WMTSSource(config.source);
+    var layer = new itowns.ElevationLayer(config.id, config);
+    view.addLayer(layer).then(menuGlobe.addLayerGUI.bind(menuGlobe));
+  }
+
+  function picking(event) {
+      if(view.controls.isPaused()) {
+          var htmlInfo = document.getElementById('info');
+          var intersects = view.pickObjectsAt(event, 3, 'WFS Building');
+          var properties;
+          var info;
+          var batchId;
+
+          htmlInfo.innerHTML = ' ';
+
+          if (intersects.length) {
+              batchId = intersects[0].object.geometry.attributes.batchId.array[intersects[0].face.a];
+              properties = intersects[0].object.feature.geometry[batchId].properties;
+
+              Object.keys(properties).map(function (objectKey) {
+                  var value = properties[objectKey];
+                  var key = objectKey.toString();
+                  if (key[0] !== '_' &amp;&amp; key !== 'geometry_name') {
+                      info = value.toString();
+                      htmlInfo.innerHTML +='&lt;li&gt;&lt;b&gt;' + key + ': &lt;/b&gt;' + info + '&lt;/li&gt;';
+                  }
+              });
+          }
+      }
+  }
+
+
+  function colorBuildings(properties) {
+      if (properties.id.indexOf('bati_remarquable') === 0) {
+          return color.set(0x5555ff);
+      } else if (properties.id.indexOf('bati_industriel') === 0) {
+          return color.set(0xff5555);
+      }
+      return color.set(0xeeeeee);
+  }
+
+  function altitudeBuildings(properties) {
+      return properties.z_min - properties.hauteur;
+  }
+
+  function extrudeBuildings(properties) {
+      return properties.hauteur;
+  }
+
+  function acceptFeature(properties) {
+      return !!properties.hauteur;
+  }
+
+  function altitudeLine(properties, contour) {
+      var result;
+      var z = 0;
+      if (contour) {
+          result = itowns.DEMUtils.getElevationValueAt(view.tileLayer, contour, 0, tile);
+          if (!result) {
+              result = itowns.DEMUtils.getElevationValueAt(view.tileLayer, contour, 0);
+          }
+          tile = [result.tile];
+          if (result) {
+              z = result.z;
+          }
+          return z + 5;
+      }
+  }
+
+  function colorLine(properties) {
+      if (properties) {
+          var rgb = properties.couleur.split(' ');
+          return color.setRGB(rgb[0] / 255, rgb[1] / 255, rgb[2] / 255);
+      }
+  }
+
+  function acceptFeatureBus(properties) {
+      var line = properties.ligne + properties.sens;
+      if (linesBus.indexOf(line) === -1) {
+          linesBus.push(line);
+          return true;
+      }
+      return false;
+  }
+
+  scaler = function update(/* dt */) {
+      var i;
+      var mesh;
+      if (meshes.length) {
+          view.notifyChange(view.camera.camera3D, true);
+      }
+      for (i = 0; i &lt; meshes.length; i++) {
+          mesh = meshes[i];
+          if (mesh) {
+              mesh.scale.z = Math.min(
+                  1.0, mesh.scale.z + 0.1);
+              mesh.updateMatrixWorld(true);
+          }
+      }
+      meshes = meshes.filter(function filter(m) { return m.scale.z &lt; 1; });
+  };
+</code></pre>
+
+<ul>
+<li>Create a <code>config.js</code> javascript file</li>
+<li>First set some global variables (<em>color, position, lists, &hellip;</em>) to get things done:</li>
+</ul>
+
+<pre><code class="language-javascript">  // Set global variables
+  var color = new itowns.THREE.Color();
+  var tile;
+  var meshes = [];
+  var linesBus = [];
+  var scaler;
+  ////////////////////////
+</code></pre>
+
+<ul>
+<li>Then set initial itowns parameters:</li>
+</ul>
+
+<pre><code class="language-javascript">  // Set initial parameters
+  //// Define initial camera position
+  var positionOnGlobe = { longitude: 4.818, latitude: 45.7354, altitude: 3000 };
+
+  //// `viewerDiv` will contain iTowns' rendering area (`&lt;canvas&gt;`)
+  var viewerDiv = document.getElementById('viewerDiv');
+
+  //// Instanciate iTowns GlobeView*
+  var view = new itowns.GlobeView(viewerDiv, positionOnGlobe);
+  setupLoadingScreen(viewerDiv, view);
+
+  var menuGlobe = new GuiTools('menuDiv', view);
+  ////////////////////////
+</code></pre>
+
+<ul>
+<li>Add imagery and elevation layers to the scene (<em>definitions in JSON files</em>):</li>
+</ul>
+
+<pre><code class="language-javascript">  // Add one imagery layer to the scene
+  // This layer is defined in a json file but it could be defined as a plain js
+  // object. See Layer* for more info.
+  itowns.Fetcher.json('../examples/layers/JSONLayers/Ortho.json').then(function _(config) {
+      config.source = new itowns.WMTSSource(config.source);
+      var layer = new itowns.ColorLayer('Ortho', config);
+      view.addLayer(layer).then(menuGlobe.addLayerGUI.bind(menuGlobe));
+  });
+
+  // Add two elevation layers.
+  // These will deform iTowns globe geometry to represent terrain elevation.
+  itowns.Fetcher.json('../examples/layers/JSONLayers/WORLD_DTM.json').then(addElevationLayerFromConfig);
+  itowns.Fetcher.json('../examples/layers/JSONLayers/IGN_MNT_HIGHRES.json').then(addElevationLayerFromConfig);
+</code></pre>
+
+<ul>
+<li>Set Lyon Bus Lines WFS Source and add it as new <code>GeometryLayer</code>:</li>
+</ul>
+
+<pre><code class="language-javascript">  // Add WFS Lyon Bus Lines
+  var lyonTclBusSource = new itowns.WFSSource({
+      protocol: 'wfs',
+      url: 'https://download.data.grandlyon.com/wfs/rdata?',
+      version: '2.0.0',
+      typeName: 'tcl_sytral.tcllignebus',
+      projection: 'EPSG:3946',
+      extent: {
+          west: 1822174.60,
+          east: 1868247.07,
+          south: 5138876.75,
+          north: 5205890.19,
+      },
+      zoom: { min: 9, max: 9 },
+      format: 'geojson',
+  });
+
+  var lyonTclBusLayer = new itowns.GeometryLayer('WFS Bus lines', new itowns.THREE.Group(), {
+      name: 'lyon_tcl_bus',
+      update: itowns.FeatureProcessing.update,
+      convert: itowns.Feature2Mesh.convert({
+          color: colorLine,
+          altitude: altitudeLine }),
+      linewidth: 5,
+      filter: acceptFeatureBus,
+      source: lyonTclBusSource
+  });
+  view.addLayer(lyonTclBusLayer);
+</code></pre>
+
+<ul>
+<li>Call the function to update meshes before rendering:</li>
+</ul>
+
+<pre><code class="language-javascript">view.addFrameRequester(itowns.MAIN_LOOP_EVENTS.BEFORE_RENDER, scaler);
+</code></pre>
+
+<ul>
+<li>Add Building WFS source and add it as a new <code>GeometryLayer</code>:</li>
+</ul>
+
+<pre><code class="language-javascript">  var wfsBuildingSource = new itowns.WFSSource({
+      url: 'https://wxs.ign.fr/choisirgeoportail/geoportail/wfs?',
+      version: '2.0.0',
+      typeName: 'BDTOPO_BDD_WLD_WGS84G:bati_remarquable,BDTOPO_BDD_WLD_WGS84G:bati_indifferencie,BDTOPO_BDD_WLD_WGS84G:bati_industriel',
+      projection: 'EPSG:4326',
+      ipr: 'IGN',
+      format: 'application/json',
+      zoom: { min: 14, max: 14 },
+      extent: {
+          west: 4.568,
+          east: 5.18,
+          south: 45.437,
+          north: 46.03,
+      },
+  });
+
+  var wfsBuildingLayer = new itowns.GeometryLayer('WFS Building', new itowns.THREE.Group(), {
+      update: itowns.FeatureProcessing.update,
+      convert: itowns.Feature2Mesh.convert({
+          color: colorBuildings,
+          batchId: function (property, featureId) { return featureId; },
+          altitude: altitudeBuildings,
+          extrude: extrudeBuildings }),
+      onMeshCreated: function scaleZ(mesh) {
+          mesh.scale.z = 0.01;
+          meshes.push(mesh);
+      },
+      filter: acceptFeature,
+      overrideAltitudeInToZero: true,
+      source: wfsBuildingSource
+  });
+  view.addLayer(wfsBuildingLayer);
+</code></pre>
+
+<ul>
+<li>Finally add some GUI (<em>Graphical User Interface</em>):</li>
+</ul>
+
+<pre><code class="language-javascript">  // Listen for globe full initialisation event
+  view.addEventListener(itowns.GLOBE_VIEW_EVENTS.GLOBE_INITIALIZED, function () {
+      // eslint-disable-next-line no-console
+      console.info('Globe initialized');
+      view.controls.setTilt(45);
+  });
+  var d = new debug.Debug(view, menuGlobe.gui);
+  debug.createTileDebugUI(menuGlobe.gui, view, view.tileLayer, d);
+
+  // Add GUI
+  for (var layer of view.getLayers()) {
+      if (layer.id === 'WFS Bus lines') {
+          layer.whenReady.then( function _(layer) {
+              var gui = debug.GeometryDebug.createGeometryDebugUI(menuGlobe.gui, view, layer);
+              debug.GeometryDebug.addMaterialLineWidth(gui, view, layer, 1, 10);
+          });
+      }
+      if (layer.id === 'WFS Building') {
+          layer.whenReady.then( function _(layer) {
+              var gui = debug.GeometryDebug.createGeometryDebugUI(menuGlobe.gui, view, layer);
+              debug.GeometryDebug.addWireFrameCheckbox(gui, view, layer);
+              window.addEventListener('mousemove', picking, false);
+          });
+      }
+      if (layer.id === 'WFS Route points') {
+          layer.whenReady.then( function _(layer) {
+              var gui = debug.GeometryDebug.createGeometryDebugUI(menuGlobe.gui, view, layer);
+              debug.GeometryDebug.addMaterialSize(gui, view, layer, 1, 200);
+          });
+      }
+  }
+</code></pre>
+
+<ul>
+<li>Go to <a href="http://localhost:8080/[NEW_DIRECTORY]/index.html">http://localhost:8080/[NEW_DIRECTORY]/index.html</a> and you should see this:</li>
+</ul>
+
+<p><img src="./images/wts_extruded.png" width="70%"></p>
+
+<h3 id="to-go-further">To go further</h3>
+
+<h4 id="useful-links">Useful links</h4>
+
+<h5 id="colors-palettes">Colors palettes</h5>
+
+<ul>
+<li><a href="http://colorbrewer2.org/#type=sequential&amp;scheme=BuGn&amp;n=3">ColorBrewer</a> to find the <em>best</em> palette</li>
+<li><a href="https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html">Why you should use viridis or similar palettes</a> (<em>because they are blindness color proof</em>)</li>
+</ul>
+
+<h5 id="data-visualisation">Data Visualisation</h5>
+
+<ul>
+<li><a href="https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73">Case studies</a></li>
+</ul>
+
+<h4 id="layers-management">Layers management</h4>
+
+<h5 id="json-layers">JSON layers</h5>
+
+<h4 id="cool-examples">Cool examples</h4>
+
+<h5 id="split-layers">Split Layers</h5>
+
+<p><img src="./images/itowns_split.png" width="70%"></p>
+
+<p>This example is based on the <a href="http://www.itowns-project.org/itowns/examples/split.html">itowns split rendering example</a>.</p>
+
+<p>You will find below all the required codes.</p>
+
+<h6 id="css-1">CSS</h6>
+
+<pre><code class="language-css">/* From http://www.itowns-project.org/itowns/examples/globe_vector.html */
+
+.tooltip {
+   display: none;
+   background-image: linear-gradient(rgba(80, 80, 80,0.95), rgba(60, 60, 60,0.95));
+   box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.5);
+   margin-top: 20px;
+   margin-left: 20px;
+   padding: 10px;
+   position: absolute;
+   z-index: 1000;
+   color: #CECECE;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+   line-height: 18px;
+   text-align: left;
+}
+.coord {
+   font-size: 12px;
+   padding-left:20px;
+   color: #93B7C0;
+   text-shadow: 0px 1px 0px rgba(200,200,200,.3), 0px -1px 0px rgba(30,30,30,.7);
+}
+
+#splitSlider {
+   position: absolute;
+   left: 50%;
+   top: 0px;
+   width: 4px;
+   height: 100%;
+   background-color: #666666;
+}
+
+#splitSlider:hover {
+   cursor: ew-resize;
+}
+</code></pre>
+
+<h6 id="js-1">JS</h6>
+
+<pre><code class="language-javascript">// Globe view
+var viewerDiv = document.getElementById('viewerDiv');
+var position = new itowns.Coordinates('WGS84', 2.35, 48.8, 25e6);
+var view = new itowns.GlobeView(viewerDiv, position);
+var menuGlobe = new GuiTools('menuDiv', view);
+
+// Add two imagery layers to the scene
+// This layer is defined in a json file but it could be defined as a plain js
+// object. See Layer* for more info.
+function addColorLayerFromConfig(config) {
+    var layer = new itowns.ColorLayer(config.id, config);
+    return view.addLayer(layer);
+}
+
+var promises = [];
+var promisesUp = [];
+
+var tileLayer1;
+var tileLayer2;
+var ariegeLayer;
+var splitSlider;
+var splitPosition;
+var xD;
+
+// Add two imagery layers to the scene
+// This layer is defined in a json file but it could be defined as a plain js
+// object. See Layer* for more info.
+function addColorLayerFromConfig(config) {
+    var layer = new itowns.ColorLayer(config.id, config);
+
+    return view.addLayer(layer);
+}
+promises.push(itowns.Fetcher.json('./JSON_layers/OSM_stamen_terrain.json')
+    .then(function _(c) {
+        c.source = new itowns.TMSSource(c.source);
+        return c;
+    })
+    .then(addColorLayerFromConfig)
+    .then(function _(l) { tileLayer1 = l; }));
+
+promises.push(itowns.Fetcher.json('./JSON_layers/OSM_cartodb_dark.json')
+    .then(function _(c) {
+        c.source = new itowns.TMSSource(c.source);
+        return c;
+    })
+    .then(addColorLayerFromConfig)
+    .then(function _(l) { tileLayer2 = l; }));
+
+promises.push(
+  itowns.Fetcher.json('https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements/09-ariege/departement-09-ariege.geojson')
+      .then(function _(geojson) {
+          return itowns.GeoJsonParser.parse(geojson, {
+              buildExtent: true,
+              crsIn: 'EPSG:4326',
+              crsOut: view.tileLayer.extent.crs,
+              mergeFeatures: true,
+              withNormal: false,
+              withAltitude: false,
+          });
+      }).then(function _(parsedData) {
+          var ariegeSource = new itowns.FileSource({
+              parsedData,
+          });
+
+          myLayer = new itowns.ColorLayer('Ariege', {
+              name: 'ariege',
+              transparent: true,
+              style: {
+                  fill: 'orange',
+                  fillOpacity: 0.5,
+                  stroke: 'white',
+              },
+              source: ariegeSource,
+          });
+          return view.addLayer(myLayer);
+      })
+    .then(function _(l) { ariegeLayer = l; })
+);
+
+// Add two elevation layers.
+// These will deform iTowns globe geometry to represent terrain elevation.
+function addElevationLayerFromConfig(config) {
+    config.source = new itowns.WMTSSource(config.source);
+    var layer = new itowns.ElevationLayer(config.id, config);
+    view.addLayer(layer).then(menuGlobe.addLayerGUI.bind(menuGlobe));
+}
+itowns.Fetcher.json('../examples/layers/JSONLayers/WORLD_DTM.json').then(addElevationLayerFromConfig);
+itowns.Fetcher.json('../examples/layers/JSONLayers/IGN_MNT_HIGHRES.json').then(addElevationLayerFromConfig);
+
+// Add atmoshpere layer
+const atmosphere = view.getLayerById('atmosphere');
+menuGlobe.addGUI('RealisticLighting', false, function (v) {
+    atmosphere.setRealisticOn(v);
+    view.notifyChange(atmosphere);
+});
+
+// Listen for globe full initialisation event
+view.addEventListener(itowns.VIEW_EVENTS.LAYERS_INITIALIZED, function _() {
+    Promise.all(promises).then(new ToolTip(view,
+        document.getElementById('viewerDiv'),
+        document.getElementById('tooltipDiv')));
+});
+
+// SLIDE MANAGEMENT
+// Slide handling
+splitPosition = 0.5 * window.innerWidth;
+xD = 0;
+function splitSliderMove(evt) {
+    var s = (evt.clientX - xD) / splitSlider.parentElement.offsetWidth;
+    splitSlider.style.left = (100.0 * s) + '%';
+    splitPosition = s * window.innerWidth;
+    view.notifyChange();
+}
+
+function mouseDown(evt) {
+    xD = evt.clientX - splitSlider.offsetLeft;
+    window.addEventListener('mousemove', splitSliderMove, true);
+}
+
+function mouseUp() {
+    window.removeEventListener('mousemove', splitSliderMove, true);
+}
+
+function changeLayerVisibility(tileLayer1Visible, tileLayer2Visible, layerVisible) {
+    view.scene.traverse(function _(obj) {
+        if (obj.material &amp;&amp; obj.material.visible &amp;&amp; obj.material.getLayer) {
+            var layer1 = obj.material.getLayer(tileLayer1.id);
+            var layer2 = obj.material.getLayer(tileLayer2.id);
+            if (layer1) layer1.visible = tileLayer1Visible;
+            if (layer2) layer2.visible = tileLayer2Visible
+        }
+    });
+}
+splitSlider = document.getElementById('splitSlider');
+document.getElementById('splitSlider').addEventListener('mousedown', mouseDown, false);
+window.addEventListener('mouseup', mouseUp, false);
+
+// Rendering code
+function splitRendering() {
+    var g = view.mainLoop.gfxEngine;
+    var r = g.renderer;
+
+    r.setScissorTest(true);
+
+    // render ortho layer on the left
+    changeLayerVisibility(true, false);
+
+    r.setScissor(0, 0, splitPosition + 2, window.innerHeight);
+    g.renderView(view);
+
+    // render osm layer on the right
+    changeLayerVisibility(false, true);
+
+    r.setScissor(splitPosition + 2, 0, window.innerWidth - splitPosition - 2, window.innerHeight);
+    g.renderView(view);
+}
+
+
+// Override default rendering method when color layers are ready
+Promise.all(promises).then(
+    function _() { view.render = splitRendering; }).catch(console.error);
+</code></pre>
+
+<h6 id="html-1">HTML</h6>
+
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Test Globe&lt;/title&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;../examples/css/example.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;../examples/css/loading_screen.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./CSS/custom.css&quot;&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;http://maps.stamen.com/js/tile.stamen.js?v1.3.0&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;../examples/js/GUI/dat.gui/dat.gui.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&quot;viewerDiv&quot; class=&quot;viewer&quot;&gt;
+        &lt;span id=&quot;tooltipDiv&quot; class=&quot;tooltip&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;splitSlider&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;../examples/js/GUI/GuiTools.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;../dist/itowns.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;../examples/js/loading_screen.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;../examples/js/FeatureToolTip.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;./JS/config.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h6 id="json-1">JSON</h6>
+
+<pre><code class="language-JSON">{
+  &quot;id&quot;:&quot;STAMEN TERRAIN&quot;,
+  &quot;source&quot;:{
+    &quot;format&quot;: &quot;image/jpg&quot;,
+    &quot;url&quot;: &quot;https://stamen-tiles.a.ssl.fastly.net/terrain/${z}/${x}/${y}.jpg&quot;,
+    &quot;attribution&quot;: {
+      &quot;name&quot;: &quot;OpenStreetMap&quot;,
+      &quot;url&quot;: &quot;http://www.openstreetmap.org/&quot;
+    },
+    &quot;tileMatrixSet&quot;: &quot;PM&quot;
+  }
+}
+</code></pre>
+
+<pre><code class="language-JSON">{
+  &quot;id&quot;:&quot;CARTODB DARK&quot;,
+  &quot;source&quot;:{
+    &quot;isInverted&quot;: true,
+    &quot;format&quot;: &quot;image/png&quot;,
+    &quot;url&quot;: &quot;https://cartodb-basemaps-a.global.ssl.fastly.net/dark_all/${z}/${x}/${y}.png&quot;,
+    &quot;attribution&quot;: {
+        &quot;name&quot;: &quot;Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL.&quot;,
+        &quot;url&quot;: &quot;http://carto.com/basemaps&quot;
+    },
+    &quot;tileMatrixSet&quot;: &quot;PM&quot;
+  }
+}
+</code></pre>
+
+            </div>
+        </article>
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='https://thomleysens.github.io/test_hugo/' class="logo"><img src="https://thomleysens.github.io/test_hugo/img/main/logo.jpg" alt="Hugo Future Imperfect" /></a>
+      
+    
+    
+      <header>
+        <h2>Hugo Future Imperfect</h2>
+        <p>Another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a>. Ported by Julio Pescador with some extra goodies <i class='fa fa-hand-peace-o'></i></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+          
+    <li><a href="https://thomleysens.github.io/test_hugo/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+
+
+        
+        
+  <li><a href="//github.com/jpescador/hugo-future-imperfect" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//flickr.com/photos/example" target="_blank" title="Flickr" class="fa fa-flickr"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/example" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+  <li><a href="//linkedin.com/company/examplebusiness" target="_blank" title="LinkedIn Company" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/example" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+
+
+  <li><a href="//reddit.com/user/example" target="_blank" title="Reddit" class="fa fa-reddit"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//instagram.com/example" target="_blank" title="Instagram" class="fa fa-instagram"></a></li>
+
+
+
+
+
+  <li><a href="//twitter.com/example" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+  <li><a href="//pinterest.com/example" target="_blank" title="Pinterest" class="fa fa-pinterest-p"></a></li>
+
+
+
+  <li><a href="//telegram.me/example" target="_blank" title="telegram" class="fa fa-telegram"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//researchgate.net/profile/example" target="_blank" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
+
+
+
+  <li><a href="mailto:example" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://thomleysens.github.io/test_hugo/blog/developerscentral/">Creating a New Theme</a>
+              </h3>
+              
+              <time class="published" datetime='2014-09-28'>
+                September 28, 2014
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/developerscentral/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/">Creating a New Theme</a>
+              </h3>
+              
+              <time class="published" datetime='2014-09-28'>
+                September 28, 2014
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://thomleysens.github.io/test_hugo/blog/methodology_citygml/">Creating a New Theme</a>
+              </h3>
+              
+              <time class="published" datetime='2014-09-28'>
+                September 28, 2014
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/methodology_citygml/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/">Creating a New Theme</a>
+              </h3>
+              
+              <time class="published" datetime='2014-09-28'>
+                September 28, 2014
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/">Creating a New Theme</a>
+              </h3>
+              
+              <time class="published" datetime='2014-09-28'>
+                September 28, 2014
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /blog/
+          
+        class="button">View more posts</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+  
+  
+    <section id="categories">
+      <header>
+        <h3>
+          <a href="https://thomleysens.github.io/test_hugo/categories/">Categories</a>
+        </h3>
+      </header>
+        
+          
+        
+
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="https://thomleysens.github.io/test_hugo/categories/rict/">RICT</a>
+                <span style="float:right;">5</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                Uncategorized
+                <span style="float:right;">4</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="https://thomleysens.github.io/test_hugo/categories/hugo/">Hugo</a>
+                <span style="float:right;">3</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="https://thomleysens.github.io/test_hugo/categories/go/">Go</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="https://thomleysens.github.io/test_hugo/categories/jekyll/">Jekyll</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+    </section>
+  
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>About</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris.</p>
+      <a href="https://thomleysens.github.io/test_hugo/about/" class="button">Learn More</a>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+          
+    <li><a href="https://thomleysens.github.io/test_hugo/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+
+
+        
+        
+  <li><a href="//github.com/jpescador/hugo-future-imperfect" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//flickr.com/photos/example" target="_blank" title="Flickr" class="fa fa-flickr"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/example" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+  <li><a href="//linkedin.com/company/examplebusiness" target="_blank" title="LinkedIn Company" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/example" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+
+
+  <li><a href="//reddit.com/user/example" target="_blank" title="Reddit" class="fa fa-reddit"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//instagram.com/example" target="_blank" title="Instagram" class="fa fa-instagram"></a></li>
+
+
+
+
+
+  <li><a href="//twitter.com/example" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+  <li><a href="//pinterest.com/example" target="_blank" title="Pinterest" class="fa fa-pinterest-p"></a></li>
+
+
+
+  <li><a href="//telegram.me/example" target="_blank" title="telegram" class="fa fa-telegram"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//researchgate.net/profile/example" target="_blank" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
+
+
+
+  <li><a href="mailto:example" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2017
+        
+          Hugo Future Imperfect
+        
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="https://thomleysens.github.io/test_hugo/js/util.js"></script>
+      <script src="https://thomleysens.github.io/test_hugo/js/main.js"></script>
+      <script src="https://thomleysens.github.io/test_hugo/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+

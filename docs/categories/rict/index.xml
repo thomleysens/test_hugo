@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RICT on Hugo Future Imperfect</title>
+    <link>https://thomleysens.github.io/test_hugo/categories/rict/</link>
+    <description>Recent content in RICT on Hugo Future Imperfect</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://thomleysens.github.io/test_hugo/categories/rict/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://thomleysens.github.io/test_hugo/blog/developerscentral/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomleysens.github.io/test_hugo/blog/developerscentral/</guid>
+      <description>RICT developer&amp;rsquo;s central Step by step inception guide  Pre-requisites Checkout the [[list of languages/tools pre-requisites|DeveloperPrerequisites]] in order to develop wihin RICT. Access rights  Provide your github login in order to ask for a Github access (if you are reading this you probably already did :-)  Documentation  Look for the Doc/Devel subdirectory  Accessing the project sources Read on the proposed [[Github&amp;rsquo;s good practices|Coding-Github_Cycle]]. Installation: build, test, run  The standard RICT/Install.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/</guid>
+      <description>Getting started with Slack (Toute la doc est également disponible en français sur le site)
+Slack is a cloud-based set of team collaboration tools and services While no longer using an IRC backend, Slack offers a lot of IRC-like features: persistent chat rooms (channels) organized by topic, as well as private groups and direct messaging.
+What is Slack ?
+Getting started for new users
+Using Slack : Basics, Tips &amp;amp; Tricks</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://thomleysens.github.io/test_hugo/blog/methodology_citygml/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomleysens.github.io/test_hugo/blog/methodology_citygml/</guid>
+      <description>Méthodology CityGML
+ Recovering a part of a city in .gml
+ Tilling and recovering of the part which interest us.
+ Import in 3D Use and export in .obj
+ Import in 3ds Max, modification and export in .obj
+ Convert .obj in .gml
+ Application of the date of construction and destruction.
+ Saving in .gml
+  To illustrate our example, we will make a tower of 300 meters high in the middle of the place Bellecour in Lyon.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/</guid>
+      <description>Overview : Serious Games &amp;amp; Visualization Tools for Cultural Heritage Traditional Games &amp;amp; Serious Games  Versailles 1685 &amp;amp; Egypte 1156, the first mainstream &amp;ldquo;serious games&amp;rdquo; for cultural heritage. Point &amp;amp; click, 360° vision around the player, adventure / quizz game (gameplay video). Renaissance Toul 2013 : serious game (SG) : quizz / track game (jeu de piste) using AR [1] Priory Undercroft : immersive simulation (first person view, detailed geometry &amp;amp; texturing, non playing character (NPC) with artificial intelligence (AI), use of Virtual Reality (VR).</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/</guid>
+      <description>Overview : WebGL frameworks &amp;amp; game engines for an upcoming virtual tour / gamification List of WebGL frameworks (wikipedia)
+ Unity : cross-platform game engine with a built-in IDE. Industry standard for videogame development. Allows for quick prototyping. Comprehensive documentation, huge community. However, its WebGL implementation (WebGL player) is not native (.NET transpiled) : high compilation &amp;amp; loading time, browser-dependant performances, all assets loaded into browser memory. Non-optimized games will not run smoothly.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -49,6 +49,64 @@
     
     <item>
       <title>Creating a New Theme</title>
+      <link>https://thomleysens.github.io/test_hugo/blog/developerscentral/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomleysens.github.io/test_hugo/blog/developerscentral/</guid>
+      <description>RICT developer&amp;rsquo;s central Step by step inception guide  Pre-requisites Checkout the [[list of languages/tools pre-requisites|DeveloperPrerequisites]] in order to develop wihin RICT. Access rights  Provide your github login in order to ask for a Github access (if you are reading this you probably already did :-)  Documentation  Look for the Doc/Devel subdirectory  Accessing the project sources Read on the proposed [[Github&amp;rsquo;s good practices|Coding-Github_Cycle]]. Installation: build, test, run  The standard RICT/Install.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/</guid>
+      <description>Getting started with Slack (Toute la doc est également disponible en français sur le site)
+Slack is a cloud-based set of team collaboration tools and services While no longer using an IRC backend, Slack offers a lot of IRC-like features: persistent chat rooms (channels) organized by topic, as well as private groups and direct messaging.
+What is Slack ?
+Getting started for new users
+Using Slack : Basics, Tips &amp;amp; Tricks</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://thomleysens.github.io/test_hugo/blog/methodology_citygml/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomleysens.github.io/test_hugo/blog/methodology_citygml/</guid>
+      <description>Méthodology CityGML
+ Recovering a part of a city in .gml
+ Tilling and recovering of the part which interest us.
+ Import in 3D Use and export in .obj
+ Import in 3ds Max, modification and export in .obj
+ Convert .obj in .gml
+ Application of the date of construction and destruction.
+ Saving in .gml
+  To illustrate our example, we will make a tower of 300 meters high in the middle of the place Bellecour in Lyon.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/</guid>
+      <description>Overview : Serious Games &amp;amp; Visualization Tools for Cultural Heritage Traditional Games &amp;amp; Serious Games  Versailles 1685 &amp;amp; Egypte 1156, the first mainstream &amp;ldquo;serious games&amp;rdquo; for cultural heritage. Point &amp;amp; click, 360° vision around the player, adventure / quizz game (gameplay video). Renaissance Toul 2013 : serious game (SG) : quizz / track game (jeu de piste) using AR [1] Priory Undercroft : immersive simulation (first person view, detailed geometry &amp;amp; texturing, non playing character (NPC) with artificial intelligence (AI), use of Virtual Reality (VR).</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/</guid>
+      <description>Overview : WebGL frameworks &amp;amp; game engines for an upcoming virtual tour / gamification List of WebGL frameworks (wikipedia)
+ Unity : cross-platform game engine with a built-in IDE. Industry standard for videogame development. Allows for quick prototyping. Comprehensive documentation, huge community. However, its WebGL implementation (WebGL player) is not native (.NET transpiled) : high compilation &amp;amp; loading time, browser-dependant performances, all assets loaded into browser memory. Non-optimized games will not run smoothly.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
       <link>https://thomleysens.github.io/test_hugo/blog/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
@@ -99,6 +157,37 @@ With Jekyll, something that looked like&lt;/p&gt;
     ▾ images/
         logo.png
 &lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://thomleysens.github.io/test_hugo/blog/itowns/doc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomleysens.github.io/test_hugo/blog/itowns/doc/</guid>
+      <description>iTowns related documentation This documents centralise documentation about iTowns produced by VCity team.
+iTowns internal organisation of 3d tiles data iTowns supports 3d-tiles. It is possible to add a layer which contains 3d-tiles data. A 3d-tiles tileset contains tiles which can have other tiles as children and which can point to data in different format such as b3dm, i3dm, pnts, etc.).
+Here we will only discuss the organisation within iTowns of a 3d-tiles tileset which contains data in b3dm format.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://thomleysens.github.io/test_hugo/blog/itowns/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomleysens.github.io/test_hugo/blog/itowns/tutorial/</guid>
+      <description>Tutoriel iTowns Introduction Le but de ce tutoriel est d&amp;rsquo;apprendre à mettre en place une application utilisant certaines fonctionnalités proposées par iTowns en peu de temps. Ce tutoriel est inspiré des exemples fournis par iTowns.
+Préambule iTowns iTowns est un framework de visualisation de données géospatiales 3D sur le web. Des exemples d’utilisation sont disponibles ici. Il est écrit en JavaScript / WebGL et est basé sur la librairie JavaScript de référence pour la 3D: Three.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://thomleysens.github.io/test_hugo/blog/itowns/itowns_tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomleysens.github.io/test_hugo/blog/itowns/itowns_tutorial/</guid>
+      <description>iTowns tutorial  Tutorial UNDER CONSTRUCTION with *iTowns v2.9.0*
+  iTowns examples. Source: iTowns website   Table of content  iTowns tutorial  Table of content Preamble  iTowns  Presentation Layers Tutorial goals  Web services  Quickstart  Installation  Node and npm  Linux Windows Mac OS  iTowns  iTowns Controls Hello world  Develop your own application  Separated files for a better management  HTML CSS JS JSON  Add Tiles layers Add vector Color layer from GeoJSON Add 3D layer (WMTS) Cool stuffs (split example)     Through this tutorial you will learn how to get your own running iTowns application.</description>
     </item>
     
   </channel>

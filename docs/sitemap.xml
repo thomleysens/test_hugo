@@ -23,6 +23,31 @@
   </url>
   
   <url>
+    <loc>https://thomleysens.github.io/test_hugo/blog/developerscentral/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thomleysens.github.io/test_hugo/blog/methodology_citygml/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://thomleysens.github.io/test_hugo/blog/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
@@ -51,6 +76,18 @@
     <loc>https://thomleysens.github.io/test_hugo/categories/</loc>
     <lastmod>2017-06-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomleysens.github.io/test_hugo/blog/itowns/doc/</loc>
+  </url>
+  
+  <url>
+    <loc>https://thomleysens.github.io/test_hugo/blog/itowns/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://thomleysens.github.io/test_hugo/blog/itowns/itowns_tutorial/</loc>
   </url>
   
   <url>
@@ -96,6 +133,12 @@
   <url>
     <loc>https://thomleysens.github.io/test_hugo/categories/jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomleysens.github.io/test_hugo/categories/rict/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

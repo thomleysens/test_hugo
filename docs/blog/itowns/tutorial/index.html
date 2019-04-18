@@ -1,0 +1,1819 @@
+
+
+
+    
+
+
+
+
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "https://thomleysens.github.io/test_hugo/"
+        },
+        "articleSection" : "blog",
+        "name" : "",
+        "headline" : "",
+        "description" : "Tutoriel iTowns Introduction Le but de ce tutoriel est d&rsquo;apprendre à mettre en place une application utilisant certaines fonctionnalités proposées par iTowns en peu de temps. Ce tutoriel est inspiré des exemples fournis par iTowns.
+Préambule iTowns iTowns est un framework de visualisation de données géospatiales 3D sur le web. Des exemples d’utilisation sont disponibles ici. Il est écrit en JavaScript / WebGL et est basé sur la librairie JavaScript de référence pour la 3D: Three.",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "0001",
+        "datePublished": "0001-01-01 00:00:00 &#43;0000 UTC",
+        "dateModified" : "0001-01-01 00:00:00 &#43;0000 UTC",
+        "url" : "https://thomleysens.github.io/test_hugo/blog/itowns/tutorial/",
+        "wordCount" : "4088",
+        "keywords" : [ "Blog" ]
+    }
+    </script>
+        
+            <title> - Hugo Future Imperfect</title>
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.40.1" />
+        
+
+
+        
+        
+            
+                <meta name="description" content="HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo">
+            
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Tutoriel iTowns Introduction Le but de ce tutoriel est d&rsquo;apprendre à mettre en place une application utilisant certaines fonctionnalités proposées par iTowns en peu de temps. Ce tutoriel est inspiré des exemples fournis par iTowns.
+Préambule iTowns iTowns est un framework de visualisation de données géospatiales 3D sur le web. Des exemples d’utilisation sont disponibles ici. Il est écrit en JavaScript / WebGL et est basé sur la librairie JavaScript de référence pour la 3D: Three."/>
+<meta name="twitter:site" content="@example"/>
+
+        <meta property="og:title" content="" />
+<meta property="og:description" content="Tutoriel iTowns Introduction Le but de ce tutoriel est d&rsquo;apprendre à mettre en place une application utilisant certaines fonctionnalités proposées par iTowns en peu de temps. Ce tutoriel est inspiré des exemples fournis par iTowns.
+Préambule iTowns iTowns est un framework de visualisation de données géospatiales 3D sur le web. Des exemples d’utilisation sont disponibles ici. Il est écrit en JavaScript / WebGL et est basé sur la librairie JavaScript de référence pour la 3D: Three." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://thomleysens.github.io/test_hugo/blog/itowns/tutorial/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <meta property="og:image" content="https://thomleysens.github.io/test_hugo//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        
+<meta itemprop="name" content="">
+<meta itemprop="description" content="Tutoriel iTowns Introduction Le but de ce tutoriel est d&rsquo;apprendre à mettre en place une application utilisant certaines fonctionnalités proposées par iTowns en peu de temps. Ce tutoriel est inspiré des exemples fournis par iTowns.
+Préambule iTowns iTowns est un framework de visualisation de données géospatiales 3D sur le web. Des exemples d’utilisation sont disponibles ici. Il est écrit en JavaScript / WebGL et est basé sur la librairie JavaScript de référence pour la 3D: Three.">
+
+
+
+<meta itemprop="wordCount" content="4088">
+
+
+
+<meta itemprop="keywords" content="" />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="https://thomleysens.github.io/test_hugo/css/main.css">
+            <link rel="stylesheet" href="https://thomleysens.github.io/test_hugo/css/add-on.css">
+            <link rel="stylesheet" href="https://thomleysens.github.io/test_hugo/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+<header id="header">
+    
+      <h1><a href="https://thomleysens.github.io/test_hugo/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>About
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/itemized/">
+                            <i class="fa fa-list">&nbsp;</i>Itemized
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="https://thomleysens.github.io/test_hugo/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="https://thomleysens.github.io/test_hugo/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>About
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/itemized/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>Itemized
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://thomleysens.github.io/test_hugo/blog/developerscentral/">Creating a New Theme</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2014-09-28'>
+                                    September 28, 2014</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/developerscentral/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/">Creating a New Theme</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2014-09-28'>
+                                    September 28, 2014</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://thomleysens.github.io/test_hugo/blog/methodology_citygml/">Creating a New Theme</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2014-09-28'>
+                                    September 28, 2014</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/methodology_citygml/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/">Creating a New Theme</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2014-09-28'>
+                                    September 28, 2014</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/">Creating a New Theme</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2014-09-28'>
+                                    September 28, 2014</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">View more posts</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    
+    <div id="main">
+        <article class="post">
+            
+            <header>
+    <div class="title">
+        
+            <h1><a href="https://thomleysens.github.io/test_hugo/blog/itowns/tutorial/"></a></h1>
+            
+        
+        
+    </div>
+</header>
+
+            <div id="content">
+                
+
+<h1 id="tutoriel-itowns">Tutoriel iTowns</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Le but de ce tutoriel est d&rsquo;apprendre à mettre en place une application utilisant certaines fonctionnalités proposées par iTowns en peu de temps. Ce tutoriel est inspiré <a href="https://github.com/iTowns/itowns/tree/master/examples">des exemples fournis par iTowns</a>.</p>
+
+<h2 id="préambule">Préambule</h2>
+
+<h3 id="itowns">iTowns</h3>
+
+<p><a href="https://github.com/iTowns/itowns">iTowns</a> est un framework de visualisation de données géospatiales 3D sur le web. Des exemples d’utilisation sont disponibles <a href="http://www.itowns-project.org/itowns/examples/index.html">ici</a>. Il est écrit en JavaScript / WebGL et est basé sur la librairie JavaScript de référence pour la 3D: <a href="https://threejs.org/">Three.js</a>. La documentation d&rsquo;iTowns est disponible <a href="http://www.itowns-project.org/itowns/docs/#home">ici</a>.</p>
+
+<p>iTowns est composé de vues et de layers. Une vue peut être « planaire » ou « globe » :</p>
+
+<p><img src="TutorialImages/globe_planar_view.png" alt="" /></p>
+
+<p>Les layers sont des couches de données que l’on peut ajouter à la vue. iTowns supporte un certain nombre de format de données et de standards de communication qu’il est possible d’utiliser pour créer des layers : OGC standards (WMTS, WMS, TMS, WFS), Point Clouds, GeoJSON, GPX, KML, 3D formats (Collada, GLTF, OBJ, &hellip;), 3D tiles, DEM.</p>
+
+<p>Dans ce tutoriel, nous allons voir comment instancier une vue globe et y ajouter des couches de données (exemple : données geojson représentant les limites d’un département, maillages 3D, lignes de bus lyonnaises obtenues par flux WFS, etc.)</p>
+
+<p>Les contrôles de caméra dans iTowns sont les suivants :
+Click-gauche: Translation de la camera sur le globe (drag)
+Click-droit: Translation du globe (pan)
+Ctrl + Click-Gauche: Rotation de la camera (orbit)
+Molette de la souris : zoom avant / arrière</p>
+
+<h3 id="les-web-services">Les Web Services</h3>
+
+<p>Afin de récupérer des données à ajouter à notre vue, nous allons parfois communiquer avec des services web. Un service web est une brique logicielle dotée d&rsquo;une interface permettant l&rsquo;interaction avec des composants situés sur d&rsquo;autres machines connectées au web. L&rsquo;interaction se fait généralement à l&rsquo;aide d&rsquo;URLs normalisées (REST, WMS, WFS, etc.).
+Dans ce tutoriel, nous allons communiquer avec des services web qui vont nous fournir des cartes ou des informations géographiques (exemple : les bâtiments en 3D de la ville de Lyon). Cette communication se fera via certains des standards de l’Open GeoSpatial Consortium1 (OGC) pour la communication de données géospatiales sur le web (WMS, WFS, KML, etc.).
+Dans ce tutoriel nous utiliserons WMTS (Web Map Tile Service) et WFS (Web Feature Service).</p>
+
+<p><strong>WMTS</strong> :
+ * Fournit une carte sous forme de plusieurs images (tuiles)
+ * Les tuiles sont calculées et rendues sur le serveur. Les performances de transfert et d’affichage sont élevées car c’est de la transmission et de l’affichage d’image mais la présentation est prédéfinie et il y a peu de modifications possibles de la carte côté client (dans le navigateur web par exemple).</p>
+
+<p><strong>WFS</strong> :
+ * Fournit des données géospatiales vers un client web
+ * Il appartient au client de décider quoi faire avec les données (exemple : utilisation pour un affichage, utilisation pour une analyse locale avant l&rsquo;affichage)
+ * Permet une plus grande flexibilité que le WMTS car le client peut choisir le style et la façon d&rsquo;afficher les données
+ * Le WFS transactionnel permet à l&rsquo;utilisateur d&rsquo;ajouter et de modifier les données sur le serveur</p>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="vérification-du-fonctionnement-de-webgl">Vérification du fonctionnement de WebGL</h3>
+
+<p>iTowns s’appuie sur le technologie WebGL. Il est donc nécessaire de vérifier que votre navigateur (Chrome, Firefox) le supporte. Pour cela, vous pouvez par exemple essayer ce lien :</p>
+
+<p><a href="http://www.itowns-project.org/itowns/examples/globe.html">http://www.itowns-project.org/itowns/examples/globe.html</a></p>
+
+<p>Voici le résultat attendu:</p>
+
+<p><img src="TutorialImages/itowns_globe.png" alt="" /></p>
+
+<p>Si cet exemple ne fonctionne pas, voici quelques pistes :
+ * Mise à jour de votre navigateur
+ * Mise à jour de votre carte graphique
+ * Si le problème persiste, essayez de voir si le problème est connu sur <a href="http://get.webgl.org/">http://get.webgl.org/</a></p>
+
+<h3 id="installation-d-itowns">Installation d&rsquo;iTowns</h3>
+
+<p>Télécharger la dernière version de iTownssur le github: <a href="https://github.com/iTowns/itowns">https://github.com/iTowns/itowns</a>
+(choisir le fichier « Source code (zip) »).
+Extraire l’archive. Si vous êtes sous Windows, placez le dossier extrait dans le répertoire Système (C:). Nous appellerons ce dossier extrait le répertoire racine d’iTowns.</p>
+
+<h4 id="linux">Linux</h4>
+
+<p>Ouvrez un terminal et tapez les commandes :</p>
+
+<pre><code>    sudo apt-get install nodejs
+    sudo apt-get install npm
+    sudo npm install -g n
+    sudo n latest
+</code></pre>
+
+<p>Ces commandes permettent d’installer nodejs ainsi que la dernière version de npm.</p>
+
+<p>Placez-vous dans le répertoire racine d’iTowns.
+Lancez la commande : <code>npm install</code></p>
+
+<p>Exécutez <code>npm start</code> et vérifiez que le serveur fonctionne en ouvrant la page <a href="http://localhost:8080/examples/globe.html">http://localhost:8080/examples/globe.html</a> dans votre navigateur (Firefox ou Chrome de préférence).</p>
+
+<p>Vous pouvez stopper le serveur avec la commande <code>ctrl+c</code>.</p>
+
+<h4 id="windows">Windows</h4>
+
+<p>Vérifiez que Windows Powershell 3 est installé.
+Si c’est le cas, ouvrez en un et exécutez la commande :</p>
+
+<p><code>iex (new-object net.webclient).downloadstring('https://get.scoop.sh')</code></p>
+
+<p>Cette commande permet d’installer Scoop qui est un gestionnaire de paquets Windows.
+Note : S’il vous est demandé par le terminal d’effectuer une commande pour pouvoir éxecuter la commande précédente, aites le.</p>
+
+<p>Installez nodejs avec la commande suivante : <code>scoop install nodejs</code></p>
+
+<p>Placez-vous dans le répertoire racine d’iTowns.
+Lancez la commande : <code>npm install</code></p>
+
+<p>Exécutez <code>npm start</code> et vérifiez que le serveur fonctionne en ouvrant la page <a href="http://localhost:8080/examples/globe.html">http://localhost:8080/examples/globe.html</a> dans votre navigateur (Firefox ou Chrome de préférence)</p>
+
+<p>Vous pouvez stopper le serveur avec la commande <code>ctrl+c</code>.</p>
+
+<h4 id="osx">OSX</h4>
+
+<p>Ouvrez un terminal.
+Installez le gestionnaire de paquets en ligne de commande Homebrew :</p>
+
+<p><code>/usr/bin/ruby -e &quot;$(curl –fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code></p>
+
+<p>Installez nodejs ainsi que la dernière version de npm:
+<code>brew install node</code></p>
+
+<p>Placez-vous dans le répertoire racine d’iTowns.
+Lancez la commande : <code>npm install</code></p>
+
+<p>Exécutez <code>npm start</code> et vérifiez que le serveur fonctionne en ouvrant la page <a href="http://localhost:8080/examples/globe.html">http://localhost:8080/examples/globe.html</a> dans votre navigateur (Firefox ou Chrome de préférence).</p>
+
+<p>Vous pouvez stopper le serveur avec la commande <code>ctrl+c</code>.</p>
+
+<h2 id="création-d-une-application-utilisant-itowns">Création d&rsquo;une application utilisant iTowns</h2>
+
+<p>Créez un dossier dans le répertoire racine d’iTowns que vous pouvez par exemple appeler ‘urbanViewer’. Dans ce dossier, créez un fichier index.html qui correspondra au fichier html source de notre application.</p>
+
+<p>Insérez les lignes suivantes dans le fichier index.html :</p>
+
+<pre><code>    &lt;!doctype html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Urban Viewer&lt;/title&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script src=&quot;../dist/itowns.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+
+<p><em>Note : La balise <code>&lt;script&gt;</code> permet d’importer du JavaScript dans un document HTML. Elle nous permet ici d’importer iTowns.</em></p>
+
+<p>Ouvrez le fichier index.html que nous venons de créer avec votre navigateur. Vous devriez voir une page blanche, c’est normal nous n’avons encore rien affiché.</p>
+
+<p><em>Note : Si votre serveur local est lancé (npm start), vous pouvez accéder au fichier via l’url <a href="http://localhost:8080/urbanViewer/index.html">http://localhost:8080/urbanViewer/index.html</a> . Nous y accéderons de cette manière dans la suite du Tutoriel. localhost correspond à l’adresse où se trouve votre serveur, c’est-à-dire en local dans notre cas et 8080 correspond au port sur lequel votre serveur est actif. urbanViewer/index.html correspond ensuite au chemin depuis le répertoire où vous avez lancé npm start.</em></p>
+
+<h3 id="affichage-d-un-globe">Affichage d&rsquo;un globe</h3>
+
+<p>Dans cette partie, nous allons ajouter un globe à notre page web en utilisant les fonctionnalités offertes par iTowns.</p>
+
+<h4 id="initialisation-du-conteneur-de-scène-3d">Initialisation du conteneur de scène 3D</h4>
+
+<p>Nous allons tout d’abord créer un containeur ‘div’ dans notre page html qui contiendra la partie 3D de notre application.</p>
+
+<p>Pour cela, ajoutez la ligne suivante dans le body:</p>
+
+<p><code>&lt;div id=&quot;viewerDiv&quot;&gt;&lt;/div&gt;</code></p>
+
+<p>Nous allons ensuite ajouter du style à notre page html (en utilisant le langage CSS) :</p>
+
+<pre><code>    &lt;style type=&quot;text/css&quot;&gt;
+            html {
+                height: 100%;
+            }
+
+            body {
+                margin: 0;
+                overflow: hidden;
+                height: 100%;
+            }
+
+            div {
+                margin : auto auto;
+                width: 100%;
+                padding: 0;
+                height: 100%
+            }
+    &lt;/style&gt;
+</code></pre>
+
+<p>Ici nous spécifions que la partie html prendra 100% de la hauteur de la page ; que le body occupera 100% du html et que le div occupera 100% du body.</p>
+
+<h4 id="création-du-globe">Création du globe</h4>
+
+<p>Nous allons maintenant pouvoir commencer à coder en JavaScript pour ajouter un globe à notre scène. La première étape consiste à créer un objet JavaScript globeView qui contiendra les éléments de la vue (globe, layers). Vous pouvez trouver de la documentation sur globeView <a href="http://www.itowns-project.org/itowns/docs/#api/View/GlobeView">ici</a></p>
+
+<p>Le constructeur de globeView prend en argument le conteneur <div> dans lequel il doit être placé et les coordonnées du point vers lequel la caméra sera dirigée. Je vous propose de centrer la caméra sur Lyon. Vous pouvez donc créer un globeView avec le code suivant :</p>
+
+<pre><code>    //************ Create globeView
+    // Define the coordinates on wich the globe will be centered at the initialization
+     var viewerDiv = document.getElementById('viewerDiv');
+     var position = new itowns.Coordinates('WGS84', 2.35, 48.8, 25e6);
+     var view = new itowns.GlobeView(viewerDiv, position);  
+</code></pre>
+
+<p>Vous devriez obtenir un globe non texturé :</p>
+
+<p><img src="TutorialImages/non_textured_globe.png" alt="" /></p>
+
+<h4 id="ajout-d-un-layer-d-imagerie">Ajout d&rsquo;un layer d&rsquo;imagerie</h4>
+
+<p>Pour ajouter un layer d’imagerie (une carte), nous allons utiliser une couche WMTS fournie par iTowns.
+Le code suivant permet de charger cette couche JSON et de l’ajouter comme layer à notre vue :</p>
+
+<pre><code>    //****************** Add Imagery Layer
+   var orthoSource = new itowns.WMTSSource({
+                url: 'http://wxs.ign.fr/3ht7xcw6f7nciopo16etuqp2/geoportail/wmts',
+                name: 'ORTHOIMAGERY.ORTHOPHOTOS',
+                tileMatrixSet: 'PM',
+                format: 'image/jpeg',
+            });
+
+            var orthoLayer = new itowns.ColorLayer('Ortho', {
+                source: orthoSource,
+            });
+
+            view.addLayer(orthoLayer);
+</code></pre>
+
+<p>A ce stade-là du tutoriel vous devez avoir ce globe :</p>
+
+<p><img src="TutorialImages/textured_globe1.png" alt="" /></p>
+
+<h4 id="modification-du-layer-d-imagerie">Modification du layer d&rsquo;imagerie</h4>
+
+<p>Il est possible d’accéder à d’autres types de cartes à appliquer sur notre globe. Nous pouvons par exemple ajouter une carte fournie par <a href="https://carto.com/location-data-services/basemaps/">basemaps</a>.
+Commentez les lignes permettant d’ajouter le layer précédent et ajoutez ces lignes dans globe.js :</p>
+
+<pre><code>    var layer2 = new itowns.WMTSSource({
+                url: 'http://a.basemaps.cartocdn.com/light_all/%TILEMATRIX/%COL/%ROW.png',
+                name: 'CARTO',
+                tileMatrixSet: 'PM',
+                format: 'image/jpeg',
+            });
+              var monLayer = new itowns.ColorLayer('Scan', {
+                source: layer2,
+            });
+
+
+            view.addLayer(monLayer);
+</code></pre>
+
+<p><em>Note: Si vous ne comprenez pas tout le paramétrage de ce layer pour le moment ce n’est pas grave, nous reviendrons dessus plus tard dans le tutoriel. L’important est de voir qu’on peut utiliser différents layers d’imageries.</em></p>
+
+<p>Vous devriez observer un globe de ce type :</p>
+
+<p><img src="TutorialImages/textured_globe2.png" alt="" /></p>
+
+<p>Pour la suite du tutoriel, revenez au layer de la partie précédente (partie 2.1.3).</p>
+
+<h4 id="ajout-de-layers-d-élévation">Ajout de layers d’élévation</h4>
+
+<p>Si vous zoomez sur une chaine de montagne et que vous utilisez ctrl+click gauche pour incliner la vue, vous remarquerez que le terrain est plat. Pour remédier à ça, nous allons ajouter deux layers d’élévations de la même manière que nous avons ajouté le premier layer d’imagerie.</p>
+
+<p>Notre partie du code permettant d’ajouter des layers devient ainsi:</p>
+
+<pre><code>    //*********** Add Imagery layer
+  var elevationSource = new itowns.WMTSSource({
+                url: 'http://wxs.ign.fr/3ht7xcw6f7nciopo16etuqp2/geoportail/wmts',
+                name: 'ELEVATION.ELEVATIONGRIDCOVERAGE',
+                tileMatrixSet: 'WGS84G',
+                format: 'image/x-bil;bits=32'
+            });
+
+   var elevationLayer = new itowns.ElevationLayer('MNT_WORLD', {
+                source: elevationSource,
+            });
+
+            view.addLayer(elevationLayer);
+</code></pre>
+
+<h3 id="ajout-de-données-vecteur">Ajout de données vecteur</h3>
+
+<p>iTowns permet l’ajout de différentes données vecteur comme par exemple des données <a href="https://developers.google.com/kml/documentation/">kml</a>, des données <a href="http://www.topografix.com/gpx.asp">gpx</a> et des données <a href="http://geojson.org/">geojson</a>.</p>
+
+<p>Modifiez la position initiale de la caméra pour visualiser plus facilement les objets que nous allons ajouter : longitude : 3.5, latitude : 44, altitude : 1000000.</p>
+
+<p>Nous allons commencer par ajouter un layer kml :</p>
+
+<pre><code>    //********* Add vector Data
+    globeView.addLayer({
+        type: 'color',
+        url: 'https://raw.githubusercontent.com/iTowns/iTowns2-sample-data/master/croquis.kml',
+        protocol: 'rasterizer',
+        id: 'Kml',
+    });
+</code></pre>
+
+<p>Il est fort probable que vous ne voyez rien apparaitre pour le moment. Explications : JavaScript étant asynchrone, le layer de données kml peut être affiché avant le layer d’imagerie et donc caché par ce dernier. Il est donc nécessaire d’organiser nos layers. Cela est possible grâce à la fonctionnalité suivante d’iTowns :</p>
+
+<pre><code>    // Listen for globe full initialisation event
+    globeView.addEventListener(itowns.GLOBE_VIEW_EVENTS.GLOBE_INITIALIZED, function () {
+        console.info('Globe initialized');
+        itowns.ColorLayersOrdering.moveLayerToIndex(globeView, 'Ortho', 0);
+    });
+</code></pre>
+
+<p>iTowns contient un certain nombre d’évènements qui sont déclenchés lorsqu’il a complété des actions de fonctionnement. Une partie de ces évènements sont liés à la vue globe : <a href="http://www.itowns-project.org/itowns/API_Doc/global.html#GLOBE_VIEW_EVENTS">http://www.itowns-project.org/itowns/API_Doc/global.html#GLOBE_VIEW_EVENTS</a></p>
+
+<p>Nous utilisons ici l’évènement GLOBE_INITIALIZED qui est déclenché lorsque le globe est complètement initialisé. Nous plaçons un « callback » sur cet évènement qui permet de placer le layer Ortho (donc le premier layer d’imagerie ajouté dans notre tutoriel) à la position 0, c’est-à-dire qui en fait la première couche à être affichée.</p>
+
+<p>Il reste cependant un risque ici : il se peut que le globe soit initialisé mais que le layer ne soit pas encore créé, ce qui entrainerait un problème puisque nous le manipulons ici. Nous allons utiliser les <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Promise">promesses</a> pour pallier ce problème :</p>
+
+<ul>
+<li>Créez un objet global ‘Promise’ : <code>var promises = [];</code></li>
+<li>Ajoutez les ajouts de layers déjà créés à cet objet ‘promises’. Exemple :</li>
+</ul>
+
+<pre><code>    promises.push(itowns.Fetcher.json('../examples/layers/JSONLayers/Ortho.json').then(addLayerToGlobe));
+</code></pre>
+
+<ul>
+<li>Nous avons maintenant un moyen de vérifier que tous les layers ont été chargés avec la syntaxe :</li>
+</ul>
+
+<pre><code>    Promise.all(promises).then(function () {
+        // DO SOMETHING HERE
+    });
+</code></pre>
+
+<p>Cette syntaxe signifie que la fonction qui se trouve dans le then ne sera effectuée seulement lorsque tous les layers ont été ajoutés à la vue. Nous allons donc placer le classement des layers à cet endroit là. Ce qui nous donne finalement :</p>
+
+<pre><code>    // Listen for globe full initialisation event
+    globeView.addEventListener(itowns.GLOBE_VIEW_EVENTS.GLOBE_INITIALIZED, function () {
+        console.info('Globe initialized');
+        Promise.all(promises).then(function () {
+            itowns.ColorLayersOrdering.moveLayerToIndex(globeView, 'Ortho', 0);
+        });
+    });
+</code></pre>
+
+<p>Vous devriez maintenant voir apparaitre le layer kml suivant (dans les alpes) :</p>
+
+<p><img src="TutorialImages/kml.png" alt="" /></p>
+
+<p>Nous allons maintenant ajouter un layer de données gpx (format de fichier permettant l’échange de données GPS). On procède de la même manière que pour le layer de données kml :</p>
+
+<pre><code>    promises.push(globeView.addLayer({
+        type: 'color',
+        url: 'https://raw.githubusercontent.com/iTowns/iTowns2-sample-data/master/ULTRA2009.gpx',
+        protocol: 'rasterizer',
+        id: 'Gpx',
+    }));
+</code></pre>
+
+<p>Vous devriez observer un parcours dans les Pyrénées :</p>
+
+<p><img src="TutorialImages/gpx.png" alt="" /></p>
+
+<p>Enfin, nous allons ajouter un layer geojson d’une manière similaire :</p>
+
+<pre><code>    promises.push(globeView.addLayer({
+        type: 'color',
+        url: 'https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements/09-ariege/departement-09-ariege.geojson',
+        protocol: 'rasterizer',
+        id: 'ariege',
+        style: {
+            fill: 'orange',
+            fillOpacity: 0.5,
+            stroke: 'white',
+        },
+    }));
+</code></pre>
+
+<p>Vous devriez voir le département de l’Ariège surligné en orange :</p>
+
+<p><img src="TutorialImages/geojson.png" alt="" /></p>
+
+<h3 id="ajout-d-un-menu-de-gestion-des-couches-layer">Ajout d’un menu de gestion des couches (layer)</h3>
+
+<p>iTowns offre la possibilité d’ajouter un menu via la librairie <a href="https://workshop.chromeexperiments.com/examples/gui/">dat.gui</a> que vous allons utiliser pour gérer l’affichage des layers que nous venons d’ajouter.</p>
+
+<p>Dans le fichier index.html, rajoutez ces deux lignes qui permettent d’invoquer la librairie dat.gui et des utilitaires pour facilement utiliser cette librairie et ajouter des objets propres à iTowns dans le menu :</p>
+
+<pre><code>    &lt;script src=&quot;../examples/GUI/dat.gui/dat.gui.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;../examples/GUI/GuiTools.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Dans le fichier globe.js, nous allons maintenant devoir initialiser le menu. Pour cela il suffit de créer un nouvel objet ‘GuiTools’ et d’y ajouter la vue globeView que nous avons créée :</p>
+
+<pre><code>    var menuGlobe = new GuiTools('menuDiv');
+    menuGlobe.view = globeView;
+</code></pre>
+
+<p>La première ligne permet entre autres de créer un ‘<div>’ dans notre fichier index.html. Lors de l’ajout du style css au début du tutoriel, nous avons donné des propriétés de style à tous les éléments ‘<div>’. Jusqu’ici il n’y en avait qu’un mais nous devons maintenant corriger ça :</p>
+
+<ul>
+<li>Changer ‘<div>’ par ‘#viewerDiv’ dans la partie css du fichier index.html. Ceci permet d’appliquer le style seulement à l’élément qui a pour identifiant viewerDiv.
+
+<ul>
+<li>Rajoutez le style suivant pour ‘menuDiv ‘ :</li>
+</ul></li>
+</ul>
+
+<pre><code>    #menuDiv {
+      position: absolute;
+      top:0px;
+      margin-left: 0px;
+    }
+    @media (max-width: 600px) {
+      #menuDiv {
+          display: none;
+      }
+    }
+</code></pre>
+
+<p><strong>Ajout des couches au menu:</strong></p>
+
+<p>Maintenant que nous avons créé un conteneur pour notre menu (<div> avec l’identifiant #menuDiv), nous pouvons ajouter des couches à ce dernier. Nous allons ajouter ceux précédemment créés.</p>
+
+<p>Pour pouvoir ajouter une couche au menu, il faut que celle-ci soit complètement initialisée. Nous allons donc de nouveau utiliser les promesses. Pour cela, nous allons placer notre ajout de couches au menu à l’endroit où a été placé l’ordonnancement des layers. Ce qui nous donne finalement :</p>
+
+<pre><code>    // Listen for globe full initialisation event
+    globeView.addEventListener(itowns.GLOBE_VIEW_EVENTS.GLOBE_INITIALIZED, function () {
+        console.info('Globe initialized');
+        Promise.all(promises).then(function () {
+            menuGlobe.addImageryLayersGUI(globeView.getLayers(function (l) { return l.type === 'color'; }));
+            itowns.ColorLayersOrdering.moveLayerToIndex(globeView, 'Ortho', 0);
+        });
+    });
+</code></pre>
+
+<p>Pour ajouter un layer nous utilisons ici des fonctions de notre objet GUITools créé précédemment et la méthode ‘getLayers’ permettant de récupérer tous les layers pour lesquels la fonction de test passée en argument renvoie ‘true’.</p>
+
+<p>Les menus permettent notamment d’afficher ou non des layers ou de jouer avec leur opacité.</p>
+
+<h3 id="ajout-de-maillages-3d">Ajout de Maillages 3D</h3>
+
+<p>iTowns offre également la possibilité d’ajouter des maillages 3D dans notre scène. Dans cette étape, nous allons placer un maillage au sommet du mont Gerbier-de-Jonc.</p>
+
+<p>Note : Vous pouvez facilement trouver les coordonnées géographiques de lieux d’intérêts sur le site <a href="https://www.geoportail.gouv.fr/carte">https://www.geoportail.gouv.fr/carte</a>. Il suffit d’aller dans « paramètres » et de cliquer sur « afficher les coordonnées » puis de choisir « géographique » et « degrés décimaux » dans l’onglet « système de référence ».</p>
+
+<p>Les coordonnées du mont Gerbier-de-Jonc sont : longitude: 4.22, latitude: 44.844 et nous nous placerons à l’altitude: 4000.</p>
+
+<p>Afin de créer un objet 3D, nous allons utiliser la librairie THREE.js qui est la librairie de référence pour faire de la 3D dans le langage JavaScript. THREE.js est utilisée par iTowns et compilée dans le dossier ‘node_modules ‘ d’iTowns. Afin de pouvoir utiliser cette librairie, nous devons l’inclure dans notre application. Pour cela, nous allons procéder de la même manière que pour inclure iTowns : ajoutez la ligne suivante dans le fichier ‘index.html’ :</p>
+
+<pre><code>    &lt;script src=&quot;../node_modules/three/build/three.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Nous allons créer une fonction ‘addMeshToScene’ qui contiendra le code permettant d’ajouter un maillage 3D à notre scène :</p>
+
+<pre><code>    // Add mesh to scene
+    function addMeshToScene() {
+    }
+</code></pre>
+
+<p>Nous commençons par créer le maillage 3D. Pour cela nous utilisons la librairie THREE.js qui est la librairie de référence pour faire de la 3D dans le langage JavaScript. Nous allons créer un cylindre :</p>
+
+<pre><code>    var geometry = new THREE.CylinderGeometry(0, 10, 60, 8);
+    var material = new THREE.MeshBasicMaterial({ color: 0xff0000});
+    var mesh = new THREE.Mesh(geometry, material);
+</code></pre>
+
+<p>Je vous invite à aller consulter la documentation de THREE.js : <a href="https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene">https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene</a> afin de comprendre ces lignes de code.</p>
+
+<p>Maintenant que le maillage 3D est créé, il reste à le positionner dans notre scène. Pour cela, nous allons utiliser la position cible de la caméra, c’est-à-dire la position du mont Gerbier-de-Jonc que nous avons définie plus haut :</p>
+
+<pre><code>    // get the position on the globe, from the camera target
+    var cameraTargetPosition = globeView.controls.getCameraTargetGeoPosition();
+
+    // position of the mesh
+    var meshCoord = cameraTargetPosition;
+    meshCoord.setAltitude(cameraTargetPosition.altitude() + 30);
+</code></pre>
+
+<p>Ajoutons maintenant ces coordonnées au maillage 3D :</p>
+
+<pre><code>    mesh.position.copy(meshCoord.as(globeView.referenceCrs).xyz());
+</code></pre>
+
+<p>Nous assignons ici la position dans le système de coordonnées de notre vue (EPSG:4978 dans notre cas).</p>
+
+<p>Il reste ensuite à mettre à jour la matrice de transformation du maillage (plus d’informations ici : <a href="https://threejs.org/docs/#manual/introduction/Matrix-transformations">https://threejs.org/docs/#manual/introduction/Matrix-transformations</a>) et d’ajouter le maillage à la scène :</p>
+
+<pre><code>    // update coordinates of the mesh
+    mesh.updateMatrixWorld();
+    // add the mesh to the scene
+    globeView.scene.add(mesh);
+</code></pre>
+
+<p>Enfin, il faut maintenant utiliser cette fonction, ce que je vous propose de faire quand le globe est initialisé et après que toutes les promesses aient été résolues.</p>
+
+<p>Vous devriez obtenir ce résultat :</p>
+
+<p><img src="TutorialImages/mesh.png" alt="" /></p>
+
+<p>Ajoutons une inclinaison automatique de la caméra à 60° en ajoutant l’instruction suivante après avoir appelé la fonction addMeshToScene() :</p>
+
+<pre><code>    globeView.controls.setTilt(60, true);
+</code></pre>
+
+<p>Nous pouvons  également d’appliquer deux rotations à notre cylindre pour le faire pointer vers le sommet du mont Gerbier-de-Jonc. Ceci est possible en appliquant les rotations suivantes au maillage dans la fonction addMeshToScene() :</p>
+
+<pre><code>    mesh.lookAt(new THREE.Vector3(0, 0, 0));
+    mesh.rotateX(Math.PI / 2);
+</code></pre>
+
+<p>Vous devriez obtenir le résultat suivant:</p>
+
+<p><img src="TutorialImages/mesh2.png" alt="" /></p>
+
+<p>Il est bien entendu possible de placer d’autres objets dans la scène 3D. Si vous avez le temps, je vous invite à essayer maintenant que vous savez comment faire.</p>
+
+<h3 id="ajout-de-données-wfs">Ajout de données WFS</h3>
+
+<p><a href="http://www.opengeospatial.org/standards/wfs">WFS</a> est un protocole proposé par l’Open Geospatial Consortium qui permet d’interroger des serveurs cartographiques afin de manipuler des objets géographiques (lignes, points, polygones, etc.). Nous allons voir comment ajouter un flux de données WFS dans notre application.
+Nous allons ajouter un flux de données représentant les lignes de bus lyonnaises et un flux de données représentant les bâtiments lyonnais.</p>
+
+<h4 id="initialisations">Initialisations</h4>
+
+<p>Nous allons situer notre caméra au sud de Lyon ; pour cela nous pouvons utiliser les paramètres suivants : longitude: 4.818, latitude: 45.7354, altitude: 3000.</p>
+
+<p>Il est également nécessaire de définir le système de projection que nous allons utiliser grâce à la librairie <a href="http://proj4.org/">proj4</a> qu’iTowns utilise:</p>
+
+<pre><code>    itowns.proj4.defs('EPSG:3946',
+        '+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs');
+</code></pre>
+
+<p>EPSG:3946 correspond à une partie de la France : <a href="http://spatialreference.org/ref/epsg/3946/">http://spatialreference.org/ref/epsg/3946/</a>. Il sera utilisé pour projeter des données de lignes de bus fournis par un service de la métropole Lyonnaise.</p>
+
+<h4 id="affichage-de-lignes-de-bus-de-la-métropole-lyonnaise">Affichage de lignes de bus de la métropole lyonnaise</h4>
+
+<p>Ajoutons un layer permettant de recevoir un flux WFS de la métropole de Lyon et donnant les lignes de bus :</p>
+
+<pre><code>    promises.push(globeView.addLayer({
+        type: 'geometry',
+        update: itowns.FeatureProcessing.update,
+        convert: itowns.Feature2Mesh.convert({
+            color: colorLine,
+            altitude: altitudeLine }),
+        linewidth: 5,
+        url: 'https://download.data.grandlyon.com/wfs/rdata?',
+        protocol: 'wfs',
+        version: '2.0.0',
+        id: 'WFS Bus lines',
+        typeName: 'tcl_sytral.tcllignebus',
+        projection: 'EPSG:3946',
+        extent: {
+            west: 1822174.60,
+            east: 1868247.07,
+            south: 5138876.75,
+            north: 5205890.19,
+        },
+        options: {
+            mimetype: 'geojson',
+        },
+    }));
+</code></pre>
+
+<p>Nous allons décrire un par un les paramètres indiqués dans ce layer :</p>
+
+<ul>
+<li>Type : type de layer ajouté, ici un layer de géométries.</li>
+<li>Update : Ce paramètre est lié à un concept utilisé par iTowns que nous n’avons pas encore évoqué : chaque layer peut se voir affecter une fonction dite d’update qui sera appelée à chaque « frame ». Les animations en informatique graphique sont réalisées en affichant plusieurs « frames » par seconde (FPS), une frame correspond à une image. Ici, nous assignons une fonction d’update prédéfinie par iTowns permettant de mettre à jour certains paramètres internes du layer à chaque frame.</li>
+<li>Convert : permet d’indiquer la conversion à effectuer sur les données reçues par le flux WFS. Ici nous demandons une conversion en un maillage en utilisant la fonction convert de la classe Feature2Mesh d&rsquo;iTowns. Nous indiquons également en argument: une fonction permettant de les propriétés de couleurs reçues par le flux WFS en rgb (fonction colorLine à coder) et une fonction permettant de placer les lignes de bus à la bonne altitude (fonction altitudeLine à coder).</li>
+</ul>
+
+<p>Créons la fonction ‘colorLine’ (à placer avant la création de ce layer) de la manière suivante :</p>
+
+<pre><code>    function colorLine(properties) {
+        var rgb = properties.couleur.split(' ');
+        return new itowns.THREE.Color(rgb[0] / 255, rgb[1] / 255, rgb[2] / 255);
+    }
+</code></pre>
+
+<p>Ajoutons maintenant la fonction &lsquo;altitudeLine&rsquo; suivante:</p>
+
+<pre><code>    function altitudeLine(properties, contour) {
+        var altitudes = [];
+        var i = 0;
+        var alt = 0;
+        if (contour.length &amp;&amp; contour.length &gt; 0) {
+            for (; i &lt; contour.length; i++) {
+                alt = itowns.DEMUtils.getElevationValueAt(globeView.wgs84TileLayer, contour[i]).z + 2;
+                altitudes.push(alt);
+            }
+            return altitudes;
+        }
+        return 0;
+    }
+</code></pre>
+
+<p>Cette fonction permet de projeter les lignes de bus sur le terrain en calculant l&rsquo;altitude du terrain pour chaque point de chaque ligne de bus.</p>
+
+<ul>
+<li>linewidth: correspond à l&rsquo;épaisseur des lignes de bus.</li>
+<li>url : correspond à l’url à laquelle nous allons aller chercher les données de ligne de bus (l’adresse du service de données WFS de la métropole de Lyon)</li>
+<li>protocol : Protocole du layer</li>
+<li>Version : Version du protocole</li>
+<li>Id : identifiant du layer dans iTowns</li>
+<li>typeName : Nom des données à demander au serveur WFS</li>
+<li>Projection : système de projection utilisé pour ce layer</li>
+<li>Extent : définit la zone sur laquelle nous souhaitons obtenir des données</li>
+<li>Mimetype : format de données auquel nous souhaitons recevoir les données</li>
+</ul>
+
+<p>Vous devriez obtenir un résultat de ce type :</p>
+
+<p><img src="TutorialImages/buslines.png" alt="" /></p>
+
+<h4 id="ajout-de-bâtiments">Ajout de bâtiments</h4>
+
+<p>Nous allons maintenant ajouter des bâtiments disponibles sur un serveur de l’IGN (BD TOPO). Ces bâtiments seront récupérés grâce à un flux WFS.</p>
+
+<p>Ajoutons tous d&rsquo;abord le layer suivant :</p>
+
+<pre><code>    promises.push(globeView.addLayer({
+        type: 'geometry',
+        update: itowns.FeatureProcessing.update,
+        convert: itowns.Feature2Mesh.convert({
+            color: colorBuildings,
+            altitude: altitudeBuildings,
+            extrude: extrudeBuildings }),
+        filter: acceptFeature,
+        url: 'http://wxs.ign.fr/72hpsel8j8nhb5qgdh07gcyp/geoportail/wfs?',
+        networkOptions: { crossOrigin: 'anonymous' },
+        protocol: 'wfs',
+        version: '2.0.0',
+        id: 'WFS Buildings',
+        typeName: 'BDTOPO_BDD_WLD_WGS84G:bati_remarquable,BDTOPO_BDD_WLD_WGS84G:bati_indifferencie,BDTOPO_BDD_WLD_WGS84G:bati_industriel',
+        projection: 'EPSG:4326',
+        ipr: 'IGN',
+        options: {
+            mimetype: 'json',
+        },
+    }));
+</code></pre>
+
+<p>Détaillons les paramètres de ce layer que nous ne connaissons pas encore:</p>
+
+<ul>
+<li>Convert : Via le flux WFS, nous récupérons en réalité seulement les emprises au sol des bâtiments ainsi que leur hauteur. Il sera donc nécessaire d&rsquo;extruder les bâtiments pour les représenter en 3D. Nous assignons donc ici trois fonctions à la conversion du flux : colorBuildings pour la couleur, altitudeBuildings pour l’altitude et extrudeBuildings pour la fonction qui permettra d’extruder les bâtiments avec leur information de hauteur.</li>
+</ul>
+
+<p>Nous allons mettre en place ces trois fonctions :</p>
+
+<p><strong>ColorBuildings:</strong></p>
+
+<pre><code>    function colorBuildings(properties) {
+        if (properties.id.indexOf('bati_remarquable') === 0) {
+            return new itowns.THREE.Color(0x5555ff);
+        } else if (properties.id.indexOf('bati_industriel') === 0) {
+            return new itowns.THREE.Color(0xff5555);
+        }
+        return new itowns.THREE.Color(0xeeeeee);
+    }
+</code></pre>
+
+<p>Cette fonction permet de colorer les bâtiments en fonction de leur type : les bâtiments remarquables en bleu, les bâtiments industriels en rouge et les autres en gris clair.</p>
+
+<p><strong>altitudeBuildings:</strong></p>
+
+<pre><code>    function altitudeBuildings(properties) {
+        return properties.z_min - properties.hauteur;
+    }
+</code></pre>
+
+<p>Cette fonction permet de calculer la hauteur de l’emprise au sol des bâtiments. Z_min correspond à l’altitude du toit du bâtiment et hauteur correspond à la hauteur du bâtiment (différentiel entre l’altitude du toit du bâtiment et l’altitude de l’emprise au sol du bâtiment).</p>
+
+<p><strong>extrudeBuildings:</strong></p>
+
+<pre><code>    function extrudeBuildings(properties) {
+        return properties.hauteur;
+    }
+</code></pre>
+
+<p>Cette fonction permet de renvoyer la hauteur des bâtiments ; elle permet donc de fournir à iTowns la hauteur de l’extrusion à effectuer.</p>
+
+<ul>
+<li>Filter : cet attribut permet de mettre un filtre sur les données reçues par le flux WFS. Nous souhaitons en effet seulement recevoir les bâtiments ayant une valeur de hauteur pour être en capacité de les extruder.</li>
+</ul>
+
+<p>Nous allons mettre en place une fonction qui retourne ‘true’ pour les bâtiments qui ont une information de hauteur et ‘false’ pour ceux qui n’en ont pas :</p>
+
+<pre><code>    function acceptFeature(properties) {
+        return !!properties.hauteur;
+    }
+</code></pre>
+
+<p><em>Note : La syntaxe JavaScript ‘ !!’ permet de convertir ‘properties.hauteur’ en booléen égal à ‘false’ si la hauteur est nulle ou non définie et à ‘true’ sinon.</em></p>
+
+<ul>
+<li>‘networkOptions’ : permet de configurer la requête HTML. Plus d’informations ici : <a href="https://fr.wikipedia.org/wiki/Cross-origin_resource_sharing">https://fr.wikipedia.org/wiki/Cross-origin_resource_sharing</a> . (Ce point n’est pas important pour ce tutoriel).</li>
+</ul>
+
+<p>Vous devriez maintenant avoir un résultat de ce type :</p>
+
+<p><img src="TutorialImages/wfs.png" alt="" /></p>
+
+            </div>
+        </article>
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='https://thomleysens.github.io/test_hugo/' class="logo"><img src="https://thomleysens.github.io/test_hugo/img/main/logo.jpg" alt="Hugo Future Imperfect" /></a>
+      
+    
+    
+      <header>
+        <h2>Hugo Future Imperfect</h2>
+        <p>Another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a>. Ported by Julio Pescador with some extra goodies <i class='fa fa-hand-peace-o'></i></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+          
+    <li><a href="https://thomleysens.github.io/test_hugo/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+
+
+        
+        
+  <li><a href="//github.com/jpescador/hugo-future-imperfect" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//flickr.com/photos/example" target="_blank" title="Flickr" class="fa fa-flickr"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/example" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+  <li><a href="//linkedin.com/company/examplebusiness" target="_blank" title="LinkedIn Company" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/example" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+
+
+  <li><a href="//reddit.com/user/example" target="_blank" title="Reddit" class="fa fa-reddit"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//instagram.com/example" target="_blank" title="Instagram" class="fa fa-instagram"></a></li>
+
+
+
+
+
+  <li><a href="//twitter.com/example" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+  <li><a href="//pinterest.com/example" target="_blank" title="Pinterest" class="fa fa-pinterest-p"></a></li>
+
+
+
+  <li><a href="//telegram.me/example" target="_blank" title="telegram" class="fa fa-telegram"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//researchgate.net/profile/example" target="_blank" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
+
+
+
+  <li><a href="mailto:example" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://thomleysens.github.io/test_hugo/blog/developerscentral/">Creating a New Theme</a>
+              </h3>
+              
+              <time class="published" datetime='2014-09-28'>
+                September 28, 2014
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/developerscentral/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/">Creating a New Theme</a>
+              </h3>
+              
+              <time class="published" datetime='2014-09-28'>
+                September 28, 2014
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://thomleysens.github.io/test_hugo/blog/methodology_citygml/">Creating a New Theme</a>
+              </h3>
+              
+              <time class="published" datetime='2014-09-28'>
+                September 28, 2014
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/methodology_citygml/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/">Creating a New Theme</a>
+              </h3>
+              
+              <time class="published" datetime='2014-09-28'>
+                September 28, 2014
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/">Creating a New Theme</a>
+              </h3>
+              
+              <time class="published" datetime='2014-09-28'>
+                September 28, 2014
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /blog/
+          
+        class="button">View more posts</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+  
+  
+    <section id="categories">
+      <header>
+        <h3>
+          <a href="https://thomleysens.github.io/test_hugo/categories/">Categories</a>
+        </h3>
+      </header>
+        
+          
+        
+
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="https://thomleysens.github.io/test_hugo/categories/rict/">RICT</a>
+                <span style="float:right;">5</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                Uncategorized
+                <span style="float:right;">4</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="https://thomleysens.github.io/test_hugo/categories/hugo/">Hugo</a>
+                <span style="float:right;">3</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="https://thomleysens.github.io/test_hugo/categories/go/">Go</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="https://thomleysens.github.io/test_hugo/categories/jekyll/">Jekyll</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+    </section>
+  
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>About</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris.</p>
+      <a href="https://thomleysens.github.io/test_hugo/about/" class="button">Learn More</a>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+          
+    <li><a href="https://thomleysens.github.io/test_hugo/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+
+
+        
+        
+  <li><a href="//github.com/jpescador/hugo-future-imperfect" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//flickr.com/photos/example" target="_blank" title="Flickr" class="fa fa-flickr"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/example" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+  <li><a href="//linkedin.com/company/examplebusiness" target="_blank" title="LinkedIn Company" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/example" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+
+
+  <li><a href="//reddit.com/user/example" target="_blank" title="Reddit" class="fa fa-reddit"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//instagram.com/example" target="_blank" title="Instagram" class="fa fa-instagram"></a></li>
+
+
+
+
+
+  <li><a href="//twitter.com/example" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+  <li><a href="//pinterest.com/example" target="_blank" title="Pinterest" class="fa fa-pinterest-p"></a></li>
+
+
+
+  <li><a href="//telegram.me/example" target="_blank" title="telegram" class="fa fa-telegram"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//researchgate.net/profile/example" target="_blank" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
+
+
+
+  <li><a href="mailto:example" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2017
+        
+          Hugo Future Imperfect
+        
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="https://thomleysens.github.io/test_hugo/js/util.js"></script>
+      <script src="https://thomleysens.github.io/test_hugo/js/main.js"></script>
+      <script src="https://thomleysens.github.io/test_hugo/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+

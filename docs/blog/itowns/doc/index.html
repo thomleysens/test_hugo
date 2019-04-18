@@ -1,0 +1,1196 @@
+
+
+
+    
+
+
+
+
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "https://thomleysens.github.io/test_hugo/"
+        },
+        "articleSection" : "blog",
+        "name" : "",
+        "headline" : "",
+        "description" : "iTowns related documentation This documents centralise documentation about iTowns produced by VCity team.
+iTowns internal organisation of 3d tiles data iTowns supports 3d-tiles. It is possible to add a layer which contains 3d-tiles data. A 3d-tiles tileset contains tiles which can have other tiles as children and which can point to data in different format such as b3dm, i3dm, pnts, etc.).
+Here we will only discuss the organisation within iTowns of a 3d-tiles tileset which contains data in b3dm format.",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "0001",
+        "datePublished": "0001-01-01 00:00:00 &#43;0000 UTC",
+        "dateModified" : "0001-01-01 00:00:00 &#43;0000 UTC",
+        "url" : "https://thomleysens.github.io/test_hugo/blog/itowns/doc/",
+        "wordCount" : "569",
+        "keywords" : [ "Blog" ]
+    }
+    </script>
+        
+            <title> - Hugo Future Imperfect</title>
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.40.1" />
+        
+
+
+        
+        
+            
+                <meta name="description" content="HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo">
+            
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="iTowns related documentation This documents centralise documentation about iTowns produced by VCity team.
+iTowns internal organisation of 3d tiles data iTowns supports 3d-tiles. It is possible to add a layer which contains 3d-tiles data. A 3d-tiles tileset contains tiles which can have other tiles as children and which can point to data in different format such as b3dm, i3dm, pnts, etc.).
+Here we will only discuss the organisation within iTowns of a 3d-tiles tileset which contains data in b3dm format."/>
+<meta name="twitter:site" content="@example"/>
+
+        <meta property="og:title" content="" />
+<meta property="og:description" content="iTowns related documentation This documents centralise documentation about iTowns produced by VCity team.
+iTowns internal organisation of 3d tiles data iTowns supports 3d-tiles. It is possible to add a layer which contains 3d-tiles data. A 3d-tiles tileset contains tiles which can have other tiles as children and which can point to data in different format such as b3dm, i3dm, pnts, etc.).
+Here we will only discuss the organisation within iTowns of a 3d-tiles tileset which contains data in b3dm format." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://thomleysens.github.io/test_hugo/blog/itowns/doc/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <meta property="og:image" content="https://thomleysens.github.io/test_hugo//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        
+<meta itemprop="name" content="">
+<meta itemprop="description" content="iTowns related documentation This documents centralise documentation about iTowns produced by VCity team.
+iTowns internal organisation of 3d tiles data iTowns supports 3d-tiles. It is possible to add a layer which contains 3d-tiles data. A 3d-tiles tileset contains tiles which can have other tiles as children and which can point to data in different format such as b3dm, i3dm, pnts, etc.).
+Here we will only discuss the organisation within iTowns of a 3d-tiles tileset which contains data in b3dm format.">
+
+
+
+<meta itemprop="wordCount" content="569">
+
+
+
+<meta itemprop="keywords" content="" />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="https://thomleysens.github.io/test_hugo/css/main.css">
+            <link rel="stylesheet" href="https://thomleysens.github.io/test_hugo/css/add-on.css">
+            <link rel="stylesheet" href="https://thomleysens.github.io/test_hugo/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+<header id="header">
+    
+      <h1><a href="https://thomleysens.github.io/test_hugo/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>About
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/itemized/">
+                            <i class="fa fa-list">&nbsp;</i>Itemized
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://thomleysens.github.io/test_hugo/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="https://thomleysens.github.io/test_hugo/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="https://thomleysens.github.io/test_hugo/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>About
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/itemized/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>Itemized
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://thomleysens.github.io/test_hugo/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://thomleysens.github.io/test_hugo/blog/developerscentral/">Creating a New Theme</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2014-09-28'>
+                                    September 28, 2014</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/developerscentral/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/">Creating a New Theme</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2014-09-28'>
+                                    September 28, 2014</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://thomleysens.github.io/test_hugo/blog/methodology_citygml/">Creating a New Theme</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2014-09-28'>
+                                    September 28, 2014</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/methodology_citygml/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/">Creating a New Theme</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2014-09-28'>
+                                    September 28, 2014</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/">Creating a New Theme</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2014-09-28'>
+                                    September 28, 2014</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">View more posts</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    
+    <div id="main">
+        <article class="post">
+            
+            <header>
+    <div class="title">
+        
+            <h1><a href="https://thomleysens.github.io/test_hugo/blog/itowns/doc/"></a></h1>
+            
+        
+        
+    </div>
+</header>
+
+            <div id="content">
+                
+
+<h1 id="itowns-related-documentation">iTowns related documentation</h1>
+
+<p>This documents centralise documentation about iTowns produced by VCity team.</p>
+
+<h2 id="itowns-internal-organisation-of-3d-tiles-data">iTowns internal organisation of 3d tiles data</h2>
+
+<p>iTowns supports <a href="https://github.com/AnalyticalGraphicsInc/3d-tiles">3d-tiles</a>.
+It is possible to add a layer which contains 3d-tiles data. A 3d-tiles tileset
+contains tiles which can have other tiles as children and which can point to data
+in different format such as b3dm, i3dm, pnts, etc.).</p>
+
+<p>Here we will only discuss the organisation within iTowns of a 3d-tiles tileset
+which contains data in <a href="https://github.com/AnalyticalGraphicsInc/3d-tiles/blob/master/TileFormats/Batched3DModel/README.md">b3dm</a>
+format. Note that a b3dm file contains a <a href="https://github.com/KhronosGroup/glTF">glTF</a> file.</p>
+
+<p>The organisation is as follow:
+ * There is a root which englobes the tileset and which is defined as an <code>Object3D</code>. <a href="https://threejs.org/docs/#api/core/Object3D">Object3D</a> is a threejs class.
+ * This root has children which are tiles and are also defined as <code>Object3D</code>.
+ * Each tile can have:
+    * A <a href="https://github.com/AnalyticalGraphicsInc/3d-tiles/tree/master/TileFormats/BatchTable">batch table</a>
+    * Several attributes (defined in 3d-tiles and b3dm documentation or specific
+    to iTowns)
+    * Other tiles as children (hence also defined as <code>Object3D</code>)
+    * A glTF file which contains the features of the tiles. The organisation of a
+    glTF file follows
+    <a href="https://github.com/KhronosGroup/glTF/blob/master/specification/1.0/figures/dictionary-objects.png">this scheme</a>.
+    The glTF file is loaded using the glTFLoader of threejs and is represented in
+    iTowns by:
+        * a <code>Scene</code> object of threejs which represents the scene of the glTF file.
+        * one or multiple <code>Object3D</code> which represents one or multiple nodes of the
+        glTF file.
+        * a <code>Mesh</code> object of threejs which represents the mesh of the glTF file.</p>
+
+<p>Currently, the only way to know if an <code>Object3D</code> is a tile is by checking if it
+has a <code>layer</code> attribute.</p>
+
+<h2 id="concerning-the-initialization-update-of-a-layer-data">Concerning the initialization/update of a layer data</h2>
+
+<p><a href="https://github.com/iTowns/itowns/blob/master/src/Core/MainLoop.js">iTowns main loop</a> deals/echanges (possibly indirectly) with the data of a layer with the following sequence of calls:
+ * Initialization of the data set: <code>preprocessDataLayer</code> (e.g. the <a href="https://github.com/iTowns/itowns/blob/master/src/Core/Scheduler/Providers/3dTiles_Provider.js#L78">preprocessDataLayer for 3DTiles</a>) that is
+    - defined within a Provider
+    - called only once per layer
+    - pulls the data (e.g. a 3DTiles pointed to by some URL)
+ * Initialization of the update mechanism: <code>pre-update()</code>
+    - called at each step of the Itowns engine (i.e. each time the screen must be refreshed)
+    - acts at the level of the layer
+    - technically defined as a callback
+ * Updating of the elements of a layer: <code>update()</code><br />
+    - each element of the layer (e.g. tiles of the geometry layer) must present an <code>update()</code> method
+    - <code>update()</code> realizes the update of the considered element and optionnaly returns all the children objects that must also be updated
+    - <a href="https://github.com/iTowns/itowns/blob/master/src/Core/MainLoop.js">Mainloop.js</a> implements a recursion for updating the elements of a layer:
+      - Mainloop.js calls <code>update()</code> on the gateway element of the layer,
+      - Mainloop.js collects the returned elements (in need of update) and in turn,
+      - it calls <code>update()</code> on such returned elementss until the list of elements in need of update is empty
+    - <code>update()</code> is technically defined as a callback</p>
+
+<p>Notes:
+  * layers linked to other layers only define their <code>update()</code> callback (i.e. they a devoid of <code>pre-update()</code>)
+  * <code>preprocessDataLayer</code> parses the 3d-tiles&rsquo; tiles in the function <code>$3dTilesIndex</code> which is called when creating the tileIndex of the layer. In <code>$3dTilesIndex</code>, the tile&rsquo;s attributes are parsed and especially the bounding volume attribute is parsed using the <code>getBox</code> function in which we added a switch allowing to parse the start_date and end_date of the tile when the layer is configured with <code>TemporalExtension=true</code> (see <a href="https://github.com/jailln/itowns/commit/4ed8cd7e27d9af50e3a9c2b600f0371122b5f042">this commit</a>)
+  * <code>layer.whenReady</code> allows to now when a layer is configured and ready to be used</p>
+
+            </div>
+        </article>
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='https://thomleysens.github.io/test_hugo/' class="logo"><img src="https://thomleysens.github.io/test_hugo/img/main/logo.jpg" alt="Hugo Future Imperfect" /></a>
+      
+    
+    
+      <header>
+        <h2>Hugo Future Imperfect</h2>
+        <p>Another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a>. Ported by Julio Pescador with some extra goodies <i class='fa fa-hand-peace-o'></i></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+          
+    <li><a href="https://thomleysens.github.io/test_hugo/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+
+
+        
+        
+  <li><a href="//github.com/jpescador/hugo-future-imperfect" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//flickr.com/photos/example" target="_blank" title="Flickr" class="fa fa-flickr"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/example" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+  <li><a href="//linkedin.com/company/examplebusiness" target="_blank" title="LinkedIn Company" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/example" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+
+
+  <li><a href="//reddit.com/user/example" target="_blank" title="Reddit" class="fa fa-reddit"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//instagram.com/example" target="_blank" title="Instagram" class="fa fa-instagram"></a></li>
+
+
+
+
+
+  <li><a href="//twitter.com/example" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+  <li><a href="//pinterest.com/example" target="_blank" title="Pinterest" class="fa fa-pinterest-p"></a></li>
+
+
+
+  <li><a href="//telegram.me/example" target="_blank" title="telegram" class="fa fa-telegram"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//researchgate.net/profile/example" target="_blank" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
+
+
+
+  <li><a href="mailto:example" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://thomleysens.github.io/test_hugo/blog/developerscentral/">Creating a New Theme</a>
+              </h3>
+              
+              <time class="published" datetime='2014-09-28'>
+                September 28, 2014
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/developerscentral/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/">Creating a New Theme</a>
+              </h3>
+              
+              <time class="published" datetime='2014-09-28'>
+                September 28, 2014
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/getting-started-with-slack/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://thomleysens.github.io/test_hugo/blog/methodology_citygml/">Creating a New Theme</a>
+              </h3>
+              
+              <time class="published" datetime='2014-09-28'>
+                September 28, 2014
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/methodology_citygml/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/">Creating a New Theme</a>
+              </h3>
+              
+              <time class="published" datetime='2014-09-28'>
+                September 28, 2014
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/overview--serious-games--visualization-tools-for-cultural-heritage/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/">Creating a New Theme</a>
+              </h3>
+              
+              <time class="published" datetime='2014-09-28'>
+                September 28, 2014
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="https://thomleysens.github.io/test_hugo/blog/overview--webgl-frameworks--game-engines/" class="image featured">
+            <img src="https://thomleysens.github.io/test_hugo/img/2014/09/pic03.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /blog/
+          
+        class="button">View more posts</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+  
+  
+    <section id="categories">
+      <header>
+        <h3>
+          <a href="https://thomleysens.github.io/test_hugo/categories/">Categories</a>
+        </h3>
+      </header>
+        
+          
+        
+
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="https://thomleysens.github.io/test_hugo/categories/rict/">RICT</a>
+                <span style="float:right;">5</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                Uncategorized
+                <span style="float:right;">4</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="https://thomleysens.github.io/test_hugo/categories/hugo/">Hugo</a>
+                <span style="float:right;">3</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="https://thomleysens.github.io/test_hugo/categories/go/">Go</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="https://thomleysens.github.io/test_hugo/categories/jekyll/">Jekyll</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+    </section>
+  
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>About</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris.</p>
+      <a href="https://thomleysens.github.io/test_hugo/about/" class="button">Learn More</a>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+          
+    <li><a href="https://thomleysens.github.io/test_hugo/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+
+
+        
+        
+  <li><a href="//github.com/jpescador/hugo-future-imperfect" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//flickr.com/photos/example" target="_blank" title="Flickr" class="fa fa-flickr"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/example" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+  <li><a href="//linkedin.com/company/examplebusiness" target="_blank" title="LinkedIn Company" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/example" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+
+
+  <li><a href="//reddit.com/user/example" target="_blank" title="Reddit" class="fa fa-reddit"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//instagram.com/example" target="_blank" title="Instagram" class="fa fa-instagram"></a></li>
+
+
+
+
+
+  <li><a href="//twitter.com/example" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+  <li><a href="//pinterest.com/example" target="_blank" title="Pinterest" class="fa fa-pinterest-p"></a></li>
+
+
+
+  <li><a href="//telegram.me/example" target="_blank" title="telegram" class="fa fa-telegram"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//researchgate.net/profile/example" target="_blank" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
+
+
+
+  <li><a href="mailto:example" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2017
+        
+          Hugo Future Imperfect
+        
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="https://thomleysens.github.io/test_hugo/js/util.js"></script>
+      <script src="https://thomleysens.github.io/test_hugo/js/main.js"></script>
+      <script src="https://thomleysens.github.io/test_hugo/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+
