@@ -62,6 +62,16 @@
 
 ## Warnings
 
-* This is pretty simple but there is no continuous integration 
+* This is pretty simple but there is no continuous integration
 * Need maybe a *web master/editor* to update and/or maintain the project's site
 * Choose a theme with its advantages and disadvantages and deal with it, changes could take a lot of time
+
+## Jekyll VS hugo
+
+|                   | **HUGO** | *Hugo review* | **JEKYLL** | *Jekyll review* |
+|:------------------|:---------|:-------------:|:-----------|:---------------:|
+| ***Installation: base*** | Very simple (*one line on Linux*), No need to know Go | <img src="good.png" width="70%"> | Need to install Ruby to install Bundle to install Jekyll (*if you follow the Github Pages tutorial*). If errors, becomes very boring | <img src="bad.png" width="70%"> |
+| ***Installation: theme*** | Lot of available themes, get one with good documentation and deal with its advantages and disadvantages because changes could cost a lot | <img src="good.png" width="70%"> | Lot of available themes, get one with good documentation and deal with its advantages and disadvantages because changes could cost a lot | <img src="good.png" width="70%"> |
+| ***Checking***    | Possible local check on localhost, one line in terminal | <img src="good.png" width="70%"> | Possible local check on localhost, one line in terminal | <img src="good.png" width="70%"> |
+| ***Integration (with GitHub Pages)*** | Update of a directory with content then need to generate a site directory (*when pushed to GitHub, site is updated automatically*) | <img src="good.png" width="70%"> <img src="bad.png" width="70%"> | Continuous integration | <img src="good.png" width="70%"> |
+| ***Conclusion*** | Simple, Markdown, 1 command line to update | <img src="good.png" width="70%"> | Supposedly easy and pretty straightforward **if and only if** there is no installation or maintenance problem | <img src="bad.png" width="70%"> |
