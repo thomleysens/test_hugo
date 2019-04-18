@@ -27,7 +27,7 @@
       ```
 
     * Then choose a [theme](https://themes.gohugo.io)
-    * Download the chosen theme (*for example [hugo Resume](https://github.com/eddiewebb/hugo-resume)*) as a submodule of your repo:
+    * Download the chosen theme (*for example [hugo-future-imperfect](https://github.com/jpescador/hugo-future-imperfect)*) as a submodule of your repo:
 
       ```bash
       git submodule add https://github.com/jpescador/hugo-future-imperfect themes/hugo-resume
